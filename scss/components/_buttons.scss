@@ -1,0 +1,49 @@
+.blue{
+    background-color: #4183D7;
+    border: solid #4183D7 1px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.blue:hover{
+    background-color: #2A6EC6;
+    border-color: #2A6EC6;
+}
+
+.gray {
+    background-color: #999AA2;
+    border: solid #999AA2 1px;
+}
+.gray:hover {
+    background-color: #84858F;
+    border-color: #84858F;
+}
+
+.support-btn{
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.contact-btn{
+    margin-right: 20px;
+}
+
+.btn{
+    box-sizing: border-box;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 15px 18px;
+    font-weight: 400;
+    @extend %centered;
+    display: flex;
+    align-items: center;
+    height: 55px;
+}
+
+#search-bar-submit{
+    padding: 3px 18px 0;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
