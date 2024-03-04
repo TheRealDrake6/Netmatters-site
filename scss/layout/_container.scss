@@ -1,3 +1,8 @@
+
+div{
+    display: block;
+}
+
 input[type="text" i]{
     padding-block: 1px;
     padding-inline: 2px;
@@ -11,13 +16,21 @@ input[type="text" i]{
 }
  
 
-.main-header {
+.main-container {
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header-main{
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
 
-  
 .logo-container {
     width: 100%;
   }
@@ -110,12 +123,7 @@ input[type="text" i]{
     background-color: #333645;
     position: relative;
 }
-.main-nav-container{
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+
 .nav-container{
     display: flex;
     justify-content: center;
@@ -124,4 +132,95 @@ input[type="text" i]{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.footer-container{
+    width: 100%;
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.footer-logo{
+    padding: 30px 0 0;
+}
+
+.footer-img{
+    width: 250px;
+}
+
+ul{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.footer-mid a{
+    font-size: 0.8em;
+}
+
+.footer-copy{
+    margin-top: 30px;
+    background-color: #212330;
+    font-size: 13px;
+}
+
+.social-icon{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-upper{
+    display: flex;
+}
+.social-lower{
+    display: flex;
+}
+
+.social-btn{
+    background-color: #212330;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.facebook:hover{
+    background-color: #3B5998;
+}
+.linkedin:hover{
+    background-color: #0077B5;
+}
+.twitter:hover{
+    background-color: #00ACED;
+}
+.insta:hover{
+    background-color: #D93175;
+}
+
+.social a{
+    padding: 16px 22px 16px;
+}
+
+.copyright{
+    padding: 15px 0px;
+}
+
+.copyright > * {
+    margin: 0 5px;
 }
