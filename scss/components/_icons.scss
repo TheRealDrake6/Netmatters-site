@@ -68,3 +68,51 @@
   background-color: white;
   background-image: url(../images/chart-bar.png);
 }
+
+.tele-services-icon{
+  background-color: #D64541;
+  background-image: url(../images/phone_in_talk-white.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.tele-services:hover .tele-services-icon{
+  background-color: white;
+  background-image: url(../images/phone_in_talk.png);
+}
+
+.web-design-icon{
+  background-color: #926FB1;
+  background-image: url(../images/embed2-white.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.web-design:hover .web-design-icon{
+  background-color: white;
+  background-image: url(../images/embed2.png);
+}
+
+.cyber-icon{
+  background-color: #F62459;
+  background-image: url(../images/shield-white.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.cyber:hover .cyber-icon{
+  background-color: white;
+  background-image: url(../images/shield.png);
+}
+
+.developer-icon{
+  background-color: #CE4125;
+  background-image: url(../images/graduation-cap-white.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.developer:hover .developer-icon{
+  background-color: white;
+  background-image: url(../images/graduation-cap.png);
+}

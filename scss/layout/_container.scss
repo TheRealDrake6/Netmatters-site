@@ -70,7 +70,12 @@ input[type="text" i]{
     align-items: center;
     width: 100%;
 }
-
+.services-block-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 .software{
     box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
     text-decoration: none;
@@ -126,5 +131,57 @@ input[type="text" i]{
     text-decoration: none;
 }
 .digital:hover .block-title, .digital:hover .description{
+    color: white;
+}
+
+.tele-services{
+    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    text-align: center;
+}
+.tele-services:hover{
+    background-color: #D64541;
+    text-decoration: none;
+}
+.tele-services:hover .block-title, .tele-services:hover .description{
+    color: white;
+}
+
+.web-design{
+    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    text-align: center;
+}
+.web-design:hover{
+    background-color: #926FB1;
+    text-decoration: none;
+}
+.web-design:hover .block-title, .web-design:hover .description{
+    color: white;
+}
+
+.cyber{
+    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    text-align: center;
+}
+.cyber:hover{
+    background-color: #F62459;
+    text-decoration: none;
+}
+.cyber:hover .block-title, .cyber:hover .description{
+    color: white;
+}
+
+.developer{
+    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    text-align: center;
+}
+.developer:hover{
+    background-color: #CE4125;
+    text-decoration: none;
+}
+.developer:hover .block-title, .developer:hover .description{
     color: white;
 }

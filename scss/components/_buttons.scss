@@ -132,5 +132,69 @@
 }
 .digital:hover .read-more{
     background-color: white;
-    color: #4183D7;
+    color: #2ECC71;
+}
+
+.read-more-tele-services{
+    font-size: 1.1rem;
+    height: auto;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background-color: #D64541;
+}
+.tele-services:hover .read-more{
+    background-color: white;
+    color: #D64541;
+}
+
+.read-more-web-design{
+    font-size: 1.1rem;
+    height: auto;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background-color: #926FB1;
+}
+.web-design:hover .read-more{
+    background-color: white;
+    color: #926FB1;
+}
+
+.read-more-cyber{
+    font-size: 1.1rem;
+    height: auto;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background-color: #F62459;
+}
+.cyber:hover .read-more{
+    background-color: white;
+    color: #F62459;
+}
+
+.read-more-developer{
+    font-size: 1.1rem;
+    height: auto;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background-color: #CE4125;
+}
+.developer:hover .read-more{
+    background-color: white;
+    color: #CE4125;
 }

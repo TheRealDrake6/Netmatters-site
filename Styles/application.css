@@ -147,7 +147,75 @@ body {
 
 .digital:hover .read-more {
   background-color: white;
-  color: #4183D7;
+  color: #2ECC71;
+}
+
+.read-more-tele-services {
+  font-size: 1.1rem;
+  height: auto;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background-color: #D64541;
+}
+
+.tele-services:hover .read-more {
+  background-color: white;
+  color: #D64541;
+}
+
+.read-more-web-design {
+  font-size: 1.1rem;
+  height: auto;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background-color: #926FB1;
+}
+
+.web-design:hover .read-more {
+  background-color: white;
+  color: #926FB1;
+}
+
+.read-more-cyber {
+  font-size: 1.1rem;
+  height: auto;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background-color: #F62459;
+}
+
+.cyber:hover .read-more {
+  background-color: white;
+  color: #F62459;
+}
+
+.read-more-developer {
+  font-size: 1.1rem;
+  height: auto;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background-color: #CE4125;
+}
+
+.developer:hover .read-more {
+  background-color: white;
+  color: #CE4125;
 }
 
 .logo {
@@ -221,6 +289,58 @@ body {
 .digital:hover .digital-icon {
   background-color: white;
   background-image: url(../images/chart-bar.png);
+}
+
+.tele-services-icon {
+  background-color: #D64541;
+  background-image: url(../images/phone_in_talk-white.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.tele-services:hover .tele-services-icon {
+  background-color: white;
+  background-image: url(../images/phone_in_talk.png);
+}
+
+.web-design-icon {
+  background-color: #926FB1;
+  background-image: url(../images/embed2-white.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.web-design:hover .web-design-icon {
+  background-color: white;
+  background-image: url(../images/embed2.png);
+}
+
+.cyber-icon {
+  background-color: #F62459;
+  background-image: url(../images/shield-white.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.cyber:hover .cyber-icon {
+  background-color: white;
+  background-image: url(../images/shield.png);
+}
+
+.developer-icon {
+  background-color: #CE4125;
+  background-image: url(../images/graduation-cap-white.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.developer:hover .developer-icon {
+  background-color: white;
+  background-image: url(../images/graduation-cap.png);
 }
 
 h4 {
@@ -348,6 +468,13 @@ input[type=text i] {
   width: 100%;
 }
 
+.services-block-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .software {
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   text-decoration: none;
@@ -410,6 +537,66 @@ input[type=text i] {
 }
 
 .digital:hover .block-title, .digital:hover .description {
+  color: white;
+}
+
+.tele-services {
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+}
+
+.tele-services:hover {
+  background-color: #D64541;
+  text-decoration: none;
+}
+
+.tele-services:hover .block-title, .tele-services:hover .description {
+  color: white;
+}
+
+.web-design {
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+}
+
+.web-design:hover {
+  background-color: #926FB1;
+  text-decoration: none;
+}
+
+.web-design:hover .block-title, .web-design:hover .description {
+  color: white;
+}
+
+.cyber {
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+}
+
+.cyber:hover {
+  background-color: #F62459;
+  text-decoration: none;
+}
+
+.cyber:hover .block-title, .cyber:hover .description {
+  color: white;
+}
+
+.developer {
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+}
+
+.developer:hover {
+  background-color: #CE4125;
+  text-decoration: none;
+}
+
+.developer:hover .block-title, .developer:hover .description {
   color: white;
 }
 
@@ -699,6 +886,14 @@ header {
   .header-search-bar {
     display: none;
   }
+  .services-block-bottom {
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0 0 75px;
+  }
   .top-footer {
     display: flex;
     flex-direction: column;
@@ -759,6 +954,11 @@ header {
   .box {
     width: 280px;
   }
+  .box-bottom {
+    width: 48%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
   .footer-container {
     margin-left: auto;
   }
@@ -809,6 +1009,9 @@ header {
   }
   .box {
     width: 380px;
+  }
+  .box-bottom {
+    width: 24%;
   }
   .footer-container {
     margin-left: auto;
