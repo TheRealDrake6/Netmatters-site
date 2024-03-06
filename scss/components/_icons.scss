@@ -11,8 +11,60 @@
     height: 1.5em;
   }
 
-  .search.icon{
-    display: inline-block;
-    width: 3em;
-    height: 3em;
-  }
+.search.icon{
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+}
+
+.right-arrow{
+  margin-left: 8px;
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+}
+
+.big-icon{
+  display: block;
+  color: white;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+}
+
+.software-icon{
+  background-color: #67809F;
+  background-image: url(../images/laptop-white.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.software:hover .software-icon{
+  background-color: white;
+  background-image: url(../images/laptop.png);
+}
+
+.it-support-icon{
+  background-color: #4183D7;
+  background-image: url(../images/computer-desktop-white.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.it-support:hover .it-support-icon{
+  background-color: white;
+  background-image: url(../images/computer-desktop.png);
+}
+
+.digital-icon{
+  background-color: #2ECC71;
+  background-image: url(../images/chart-bar-white.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.digital:hover .digital-icon{
+  background-color: white;
+  background-image: url(../images/chart-bar.png);
+}

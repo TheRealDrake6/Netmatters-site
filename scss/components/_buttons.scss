@@ -1,3 +1,4 @@
+
 .blue{
     background-color: #4183D7;
     border: solid #4183D7 1px;
@@ -46,4 +47,90 @@
     padding: 3px 18px 0;
     border-radius: 0 3px 3px 0;
     cursor: pointer;
+}
+
+.button-big{
+    display: flex;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+    font-size: 1.25rem;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.light-purple{
+    background-color: #926FB1;
+    border: solid #7E57A0 1px;
+}
+.light-purple:hover{
+    background-color: #7E57A0;
+    border: solid #7E57A0 1px;
+}
+
+.consent-btn{
+    position: fixed;
+    font-size: 0.8rem;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    background: #75788A;
+    border: solid #75788A;
+    border-width: 1px 1px 0 0;
+    border-radius: 0 10px 0 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding-top: 2px;
+}
+
+.read-more-software{
+    font-size: 1.1rem;
+    height: auto;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background-color: #67809F;
+}
+.software:hover .read-more{
+    background-color: white;
+    color: #67809F;
+}
+
+.read-more-it-support{
+    font-size: 1.1rem;
+    height: auto;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background-color: #4183D7;
+}
+.it-support:hover .read-more{
+    background-color: white;
+    color: #4183D7;
+}
+
+.read-more-digital{
+    font-size: 1.1rem;
+    height: auto;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background-color: #2ECC71;
+}
+.digital:hover .read-more{
+    background-color: white;
+    color: #4183D7;
 }

@@ -1,7 +1,8 @@
 
 @import 'base/index';
-@import 'layout/index';
 @import 'components/index';
+@import 'layout/index';
+
 
 @media screen and (min-width: 480px) {
     .footer-img{
@@ -11,7 +12,11 @@
         flex-direction: row;
     }
 }
-
+@media screen and (min-width: 500px){
+    .main-img-container{
+        height: 550px;
+    }
+}
 @media screen and (min-width: 560px) {
     .main-header {
       margin-bottom: 5px;
@@ -28,7 +33,7 @@
     .main-container{
         width: 750px;
     }
-    .container{
+    .main-container{
         width: 750px;
     }
     .phone-btn{
@@ -59,19 +64,19 @@
     .support-btn, .contact-btn{
         display: none;
     }
+    .nav-banner{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 992px){
     .main-container{
         width: 970px;
     }
-    header {
-        padding-bottom: 15px;
-    }
     .logo-container {
         margin-left: auto;
     }
-    .container{
+    .main-container{
         width: 970px;
     }
     .search-bar-header{
@@ -86,6 +91,19 @@
         height: 55px;
         border-radius: 3px;
     }
+    .main-title{
+        text-align: left;
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    .services-block{
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+    .box {
+        width: 280px;
+    }
     .footer-container{
         margin-left: auto;
     }
@@ -96,6 +114,12 @@
     .main-footer > div{
         width: 190px;
         padding-right: 15px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .box{
+        width: 300px;
     }
 }
 
@@ -116,12 +140,22 @@
     #search-bar-submit{
         border-radius: 0 3px 3px 0;
     }
-    .container {
+    .main-container {
         width: 1200px;
     }
     .search-bar{
         display: inline;
         width: 230px;
+    }
+    .nav-box{
+        width: 167px;
+    }
+    .services-block{
+        justify-content: center;
+        width: 100%;
+    }
+    .box{
+        width: 380px;
     }
     .footer-container{
         margin-left: auto;
