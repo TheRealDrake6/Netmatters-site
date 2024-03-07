@@ -29,6 +29,13 @@
     }
 }
 
+@media screen and (min-width: 767px){
+    .view-all {
+        display: none;
+    }
+}
+
+
 @media screen and (min-width: 768px){
     .main-container{
         width: 750px;
@@ -49,6 +56,28 @@
         justify-content: space-between;
         align-items: stretch;
         margin: 0 0 75px;
+    }
+    .about-button{
+        cursor: pointer;
+        color: white;
+        border-radius: 6px;
+        font-size: 1.15rem;
+        text-transform: uppercase;
+        padding: 12px 27px;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .news-box{
+        display: flex;
+        justify-content: space-between;
+    }
+    .news-1, .news-2{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 49%;
+    }
+    .news-3{
+        display: none;
     }
     .top-footer{
         display: flex;
@@ -109,13 +138,19 @@
         align-items: stretch;
         justify-content: space-between;
     }
-    .box {
+    .box-top {
         width: 280px;
     }
     .box-bottom{
         width: 48%;
         margin-left: 5px;
         margin-right: 5px;
+    }
+    .row{
+        flex-direction: row;
+    }
+    .welcome-description, .client-description{
+        width: 50%;
     }
     .footer-container{
         margin-left: auto;
@@ -131,7 +166,7 @@
 }
 
 @media screen and (min-width: 1024px){
-    .box{
+    .box-top{
         width: 300px;
     }
 }
@@ -172,6 +207,21 @@
     }
     .box-bottom{
         width: 24%;
+    }
+    .welcome-description, .client-description{
+        width: 590px;
+    }
+    .about-button{
+        margin-right: 8px;
+    }
+    .news-1, .news-2{
+        margin-left: 0;
+        margin-right: 0;
+        width: 31%;
+    }
+    .news-3{
+        display: inline-block;
+        width: 31%;
     }
     .footer-container{
         margin-left: auto;

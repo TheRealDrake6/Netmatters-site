@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+.welcome-description > *, .client-description > * {
+  color: white;
+}
+
 .blue {
   background-color: #4183D7;
   border: solid #4183D7 1px;
@@ -218,6 +222,67 @@ body {
   color: #CE4125;
 }
 
+.about-button {
+  cursor: pointer;
+  color: white;
+  border-radius: 6px;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  padding: 12px 25px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.dark {
+  background-color: #272936;
+  border: solid #272936 1px;
+}
+
+.green {
+  background-color: #08B47C;
+  border: solid #08B47C 1px;
+  display: inline-block;
+}
+
+.news-button-1 {
+  position: absolute;
+  font-size: 0.8rem;
+  font-weight: 600;
+  top: 10px;
+  right: 0;
+  background-color: #d64541;
+  text-transform: uppercase;
+  padding: 0 10px;
+  line-height: 1.5rem;
+  z-index: 1;
+}
+
+.news-button-2 {
+  position: absolute;
+  font-size: 0.8rem;
+  font-weight: 600;
+  top: 10px;
+  right: 0;
+  background-color: #67809f;
+  text-transform: uppercase;
+  padding: 0 10px;
+  line-height: 1.5rem;
+  z-index: 1;
+}
+
+.news-button-3 {
+  position: absolute;
+  font-size: 0.8rem;
+  font-weight: 600;
+  top: 10px;
+  right: 0;
+  background-color: #2ecc71;
+  text-transform: uppercase;
+  padding: 0 10px;
+  line-height: 1.5rem;
+  z-index: 1;
+}
+
 .logo {
   width: 100%;
   max-width: 370px;
@@ -343,6 +408,10 @@ body {
   background-image: url(../images/graduation-cap.png);
 }
 
+.logo-circle {
+  border-radius: 50%;
+}
+
 h4 {
   display: block;
   margin-block-start: 1.32em;
@@ -395,6 +464,109 @@ h3 {
   color: #333645;
   margin-bottom: 15px;
   margin-top: 10px;
+}
+
+.welcome-description > h2, .client-description > h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.welcome-description > p, .client-description > p {
+  line-height: 1.8rem;
+}
+
+.news-title > h2 {
+  float: left;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.news-title > a {
+  float: right;
+  color: #333645;
+}
+
+.news-box {
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.news-text-1 {
+  font-size: 1rem;
+  border: solid #CCC 1px;
+  margin: -10px 0 30px 0;
+  padding: 30px 30px;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+
+.news-text-2 {
+  font-size: 1rem;
+  border: solid #CCC 1px;
+  margin: -10px 0 30px 0;
+  padding: 30px 30px;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+
+.news-text-3 {
+  font-size: 1rem;
+  border: solid #CCC 1px;
+  margin: -10px 0 30px 0;
+  padding: 30px 30px;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+
+.news-text-1 a {
+  font-weight: bold;
+  color: #d64541;
+}
+
+.news-text-2 a {
+  font-weight: bold;
+  color: #67809f;
+}
+
+.news-text-3 a {
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+.read-time {
+  font-size: 0.8rem;
+  color: #A3A8AC;
+  text-transform: uppercase;
+}
+
+.news-text-1 p {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.news-text-2 p {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.news-text-3 p {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  color: #666;
+  margin-top: 35px;
+  margin-bottom: 27px;
+}
+
+.poster-info > strong {
+  color: #333645;
 }
 
 div {
@@ -598,6 +770,91 @@ input[type=text i] {
 
 .developer:hover .block-title, .developer:hover .description {
   color: white;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  background-color: #333645;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.welcome-description, .client-description {
+  padding-right: 15px;
+}
+
+.welcome > div {
+  margin-bottom: 30px;
+}
+
+.stars {
+  margin-bottom: 30px;
+}
+
+.quotes {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.author-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #A3A8AC;
+}
+
+.review {
+  display: flex;
+  padding-top: 15px;
+}
+
+.news-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.block-news {
+  position: relative;
+  cursor: pointer;
+  top: 0;
+  transition: 0.5s ease;
+}
+
+.block-news:hover {
+  top: -10px;
+  transition: 0.5s ease;
+}
+
+.news-img {
+  width: 100%;
+}
+
+.view-all a {
+  color: #333645;
+}
+
+.poster {
+  display: flex;
+  color: #75788A;
+  font-size: 0.9rem;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: solid #CCC 1px;
+}
+
+.poster-info {
+  margin: auto 0;
+  padding-left: 20px;
 }
 
 footer {
@@ -873,6 +1130,11 @@ header {
     display: none;
   }
 }
+@media screen and (min-width: 767px) {
+  .view-all {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .main-container {
     width: 750px;
@@ -893,6 +1155,28 @@ header {
     justify-content: space-between;
     align-items: stretch;
     margin: 0 0 75px;
+  }
+  .about-button {
+    cursor: pointer;
+    color: white;
+    border-radius: 6px;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    padding: 12px 27px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .news-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .news-1, .news-2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 49%;
+  }
+  .news-3 {
+    display: none;
   }
   .top-footer {
     display: flex;
@@ -951,13 +1235,19 @@ header {
     align-items: stretch;
     justify-content: space-between;
   }
-  .box {
+  .box-top {
     width: 280px;
   }
   .box-bottom {
     width: 48%;
     margin-left: 5px;
     margin-right: 5px;
+  }
+  .row {
+    flex-direction: row;
+  }
+  .welcome-description, .client-description {
+    width: 50%;
   }
   .footer-container {
     margin-left: auto;
@@ -972,7 +1262,7 @@ header {
   }
 }
 @media screen and (min-width: 1024px) {
-  .box {
+  .box-top {
     width: 300px;
   }
 }
@@ -1012,6 +1302,21 @@ header {
   }
   .box-bottom {
     width: 24%;
+  }
+  .welcome-description, .client-description {
+    width: 590px;
+  }
+  .about-button {
+    margin-right: 8px;
+  }
+  .news-1, .news-2 {
+    margin-left: 0;
+    margin-right: 0;
+    width: 31%;
+  }
+  .news-3 {
+    display: inline-block;
+    width: 31%;
   }
   .footer-container {
     margin-left: auto;

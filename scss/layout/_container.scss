@@ -185,3 +185,87 @@ input[type="text" i]{
 .developer:hover .block-title, .developer:hover .description{
     color: white;
 }
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    background-color: #333645;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.welcome-description, .client-description{
+    padding-right: 15px;
+}
+
+.welcome > div{
+    margin-bottom: 30px;
+}
+
+.stars{
+    margin-bottom: 30px;
+}
+
+.quotes{
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.author-text{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #A3A8AC;
+}
+
+.review{
+    display: flex;
+    padding-top: 15px;
+}
+
+.news-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.block-news{
+    position: relative;
+    cursor: pointer;
+    top: 0;
+    transition: 0.5s ease;
+}
+.block-news:hover{
+    top: -10px;
+    transition: 0.5s ease;
+}
+
+.news-img{
+    width: 100%;
+}
+
+.view-all a{
+    color: #333645;
+}
+
+.poster{
+    display: flex;
+    color: #75788A;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: solid #CCC 1px;
+}
+
+.poster-info{
+    margin: auto 0;
+    padding-left: 20px;
+}
