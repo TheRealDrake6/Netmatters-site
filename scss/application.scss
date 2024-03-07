@@ -152,6 +152,16 @@
     .welcome-description, .client-description{
         width: 50%;
     }
+    .input{
+        flex-direction: row;
+    }
+    .name, .email{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .marketing-info{
+        margin: 0 10px 25px 15px;
+    }
     .footer-container{
         margin-left: auto;
     }
@@ -168,6 +178,12 @@
 @media screen and (min-width: 1024px){
     .box-top{
         width: 300px;
+    }
+    .nav-hover-container{
+        padding-left: 20px;
+    }
+    .hover-li > a{
+        font-size: 19px;
     }
 }
 
@@ -202,6 +218,12 @@
         justify-content: center;
         width: 100%;
     }
+    .triangle-software, .triangle-support, .triangle-marketing, .triangle-telecom, .triangle-design, .triangle-security, .triangle-course{
+        border-width: 30px 83.5px 0 83.5px;
+    }
+    .nav-hover-container{
+        padding-left: 30px;
+    }
     .box{
         width: 380px;
     }
@@ -223,6 +245,11 @@
         display: inline-block;
         width: 31%;
     }
+    .newsletter-container{
+        max-width: 1200px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     .footer-container{
         margin-left: auto;
     }
@@ -236,3 +263,8 @@
     }
 }
 
+@media screen and (min-width: 1440px){
+    .nav-hover-container{
+        padding-left: 100px;
+    }
+}

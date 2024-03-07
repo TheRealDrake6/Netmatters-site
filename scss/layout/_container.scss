@@ -269,3 +269,68 @@ input[type="text" i]{
     margin: auto 0;
     padding-left: 20px;
 }
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #333645;
+    background-color: #DDD;
+    align-items: center;
+    width: 100%;
+}
+
+.newsletter-container{
+    max-width: 940px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.name, .email{
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+#newsletter-name-input, #newsletter-email-input{
+    display: block;
+    width: 100%;
+    height: 47px;
+    font-size: 14px;
+    padding: 0 15px;
+    border: solid #E5E5E5 1px;
+    margin-top: 5px;
+}
+
+.marketing-info{
+    display: flex;
+    text-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.marketing-check{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.chat{
+    position: fixed;
+    cursor: pointer;
+    bottom: 20px;
+    right: 10px;
+    z-index: 3;
+    height: 60px;
+    width: 60px;
+    background-color: #333645;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.chat > img{
+    margin-top: 17px;
+    margin-left: 17px;
+}

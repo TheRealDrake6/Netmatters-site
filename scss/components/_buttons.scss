@@ -214,11 +214,19 @@
     background-color: #272936;
     border: solid #272936 1px;
 }
+.dark:hover{
+    background-color: #121318;
+    border: solid #121318 1px;
+}
 
 .green{
     background-color: #08B47C;
     border: solid #08B47C 1px;
     display: inline-block;
+}
+.green:hover{
+    background-color: #009B69;
+    border: solid #009B69 1px;
 }
 
 .news-button-1{
@@ -258,4 +266,22 @@
     padding: 0 10px;
     line-height: 1.5rem;
     z-index: 1;
+}
+
+.subscribe-btn{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    background-color: #333645;
+    border: solid #333645 1px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 15px;
+}
+.subscribe-btn:hover{
+    background-color: #22242E;
 }

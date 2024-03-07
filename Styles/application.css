@@ -238,10 +238,20 @@ body {
   border: solid #272936 1px;
 }
 
+.dark:hover {
+  background-color: #121318;
+  border: solid #121318 1px;
+}
+
 .green {
   background-color: #08B47C;
   border: solid #08B47C 1px;
   display: inline-block;
+}
+
+.green:hover {
+  background-color: #009B69;
+  border: solid #009B69 1px;
 }
 
 .news-button-1 {
@@ -281,6 +291,25 @@ body {
   padding: 0 10px;
   line-height: 1.5rem;
   z-index: 1;
+}
+
+.subscribe-btn {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  background-color: #333645;
+  border: solid #333645 1px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+.subscribe-btn:hover {
+  background-color: #22242E;
 }
 
 .logo {
@@ -438,6 +467,11 @@ h2 {
   color: #333645;
 }
 
+.nav-hover-title {
+  color: white;
+  margin-bottom: 16px;
+}
+
 .services-title > h2 {
   float: left;
   font-size: 2.4rem;
@@ -567,6 +601,54 @@ a:hover {
 
 .poster-info > strong {
   color: #333645;
+}
+
+.name label, .email label {
+  font-weight: 600;
+}
+
+.newsletter-name:after, .newsletter-email:after {
+  color: #d64541;
+  content: "*";
+}
+
+.marketing-check + label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.marketing-check + label::before {
+  content: "";
+  float: left;
+  width: 26px;
+  height: 26px;
+  border: solid #333645 3px;
+  border-radius: 3px;
+  margin-right: 20px;
+  background-position: center;
+  background-size: 50%;
+}
+
+.marketing-check:checked + label::before {
+  content: url(../images./checkmark.png);
+  background-color: #333645;
+}
+
+label[for=check] {
+  float: left;
+}
+
+.newsletter-marketing {
+  font-weight: 600;
+  line-height: 23px;
+  cursor: pointer;
+}
+
+.newsletter-marketing a {
+  color: #333645;
+  text-decoration: underline;
 }
 
 div {
@@ -857,6 +939,72 @@ input[type=text i] {
   padding-left: 20px;
 }
 
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #333645;
+  background-color: #DDD;
+  align-items: center;
+  width: 100%;
+}
+
+.newsletter-container {
+  max-width: 940px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.name, .email {
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+#newsletter-name-input, #newsletter-email-input {
+  display: block;
+  width: 100%;
+  height: 47px;
+  font-size: 14px;
+  padding: 0 15px;
+  border: solid #E5E5E5 1px;
+  margin-top: 5px;
+}
+
+.marketing-info {
+  display: flex;
+  text-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.marketing-check {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.chat {
+  position: fixed;
+  cursor: pointer;
+  bottom: 20px;
+  right: 10px;
+  z-index: 3;
+  height: 60px;
+  width: 60px;
+  background-color: #333645;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.chat > img {
+  margin-top: 17px;
+  margin-left: 17px;
+}
+
 footer {
   color: white;
   background-color: #323544;
@@ -1085,6 +1233,7 @@ header {
   cursor: pointer;
   flex-direction: column;
   text-transform: uppercase;
+  height: 100%;
 }
 
 .nav-box {
@@ -1095,12 +1244,383 @@ header {
 .nav-icon {
   display: block;
   padding-bottom: 5px;
+  height: 30px;
+}
+
+.soft-icon {
+  background-image: url(../images/laptop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bespoke:hover .soft-icon {
+  background-image: url(../images/laptop-white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sup-icon {
+  background-image: url(../images/computer-desktop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.itsupport:hover .sup-icon {
+  background-image: url(../images/computer-desktop-white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.marketing-icon {
+  background-image: url(../images/chart-bar.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.marketing:hover .marketing-icon {
+  background-image: url(../images/chart-bar-white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tele-icon {
+  background-image: url(../images/phone_in_talk.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.telecom:hover .tele-icon {
+  background-image: url(../images/phone_in_talk-white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.design-icon {
+  background-image: url(../images/embed2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.design:hover .design-icon {
+  background-image: url(../images/embed2-white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.security-icon {
+  background-image: url(../images/shield.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.security:hover .security-icon {
+  background-image: url(../images/shield-white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dev-icon {
+  background-image: url(../images/graduation-cap.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.courses:hover .dev-icon {
+  background-image: url(../images/graduation-cap-white.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .small-nav {
   font-size: 0.65rem;
   display: block;
   height: 11px;
+}
+
+.bespoke:hover {
+  background-color: #67809F;
+}
+
+.itsupport:hover {
+  background-color: #4183D7;
+}
+
+.marketing:hover {
+  background-color: #2ECC71;
+}
+
+.telecom:hover {
+  background-color: #D64541;
+}
+
+.design:hover {
+  background-color: #926FB1;
+}
+
+.security:hover {
+  background-color: #F62459;
+}
+
+.courses:hover {
+  background-color: #CE4125;
+}
+
+.bespoke:hover .triangle-software {
+  display: block;
+}
+
+.triangle-software {
+  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 66.5px 0 66.5px;
+  border-color: #67809F transparent transparent transparent;
+  transform: rotate(0deg);
+  bottom: -30px;
+  z-index: 2;
+}
+
+.itsupport:hover .triangle-support {
+  display: block;
+}
+
+.triangle-support {
+  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 66.5px 0 66.5px;
+  border-color: #4183D7 transparent transparent transparent;
+  transform: rotate(0deg);
+  bottom: -30px;
+  z-index: 2;
+}
+
+.marketing:hover .triangle-marketing {
+  display: block;
+}
+
+.triangle-marketing {
+  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 66.5px 0 66.5px;
+  border-color: #2ECC71 transparent transparent transparent;
+  transform: rotate(0deg);
+  bottom: -30px;
+  z-index: 2;
+}
+
+.telecom:hover .triangle-telecom {
+  display: block;
+}
+
+.triangle-telecom {
+  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 66.5px 0 66.5px;
+  border-color: #D64541 transparent transparent transparent;
+  transform: rotate(0deg);
+  bottom: -30px;
+  z-index: 2;
+}
+
+.design:hover .triangle-design {
+  display: block;
+}
+
+.triangle-design {
+  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 66.5px 0 66.5px;
+  border-color: #926FB1 transparent transparent transparent;
+  transform: rotate(0deg);
+  bottom: -30px;
+  z-index: 2;
+}
+
+.security:hover .triangle-security {
+  display: block;
+}
+
+.triangle-security {
+  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 66.5px 0 66.5px;
+  border-color: #F62459 transparent transparent transparent;
+  transform: rotate(0deg);
+  bottom: -30px;
+  z-index: 2;
+}
+
+.courses:hover .triangle-course {
+  display: block;
+}
+
+.triangle-course {
+  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 66.5px 0 66.5px;
+  border-color: #CE4125 transparent transparent transparent;
+  transform: rotate(0deg);
+  bottom: -30px;
+  z-index: 2;
+}
+
+.nav-hover-container {
+  display: none;
+  text-transform: none;
+  padding-left: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+}
+
+.hover-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hover-li > a {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.hover-li > a > img {
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+.hover-li {
+  padding-bottom: 30px;
+}
+
+.bespoke:hover .software-hover {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: left;
+  font-weight: bold;
+  cursor: default;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  color: white;
+  background-color: #526781;
+  padding-top: 40px;
+  z-index: 1;
+}
+
+.itsupport:hover .support-hover {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: left;
+  font-weight: bold;
+  cursor: default;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  color: white;
+  background-color: #286ABD;
+  padding-top: 40px;
+  z-index: 1;
+}
+
+.marketing:hover .marketing-hover {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: left;
+  font-weight: bold;
+  cursor: default;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  color: white;
+  background-color: #009B69;
+  padding-top: 40px;
+  z-index: 1;
+}
+
+.telecom:hover .telecom-hover {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: left;
+  font-weight: bold;
+  cursor: default;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  color: white;
+  background-color: #BC2C28;
+  padding-top: 40px;
+  z-index: 1;
+}
+
+.design:hover .design-hover {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: left;
+  font-weight: bold;
+  cursor: default;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  color: white;
+  background-color: #7E57A0;
+  padding-top: 40px;
+  z-index: 1;
+}
+
+.security:hover .security-hover {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: left;
+  font-weight: bold;
+  cursor: default;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  color: white;
+  background-color: #DE093F;
+  padding-top: 40px;
+  z-index: 1;
+}
+
+.courses:hover .courses-hover {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: left;
+  font-weight: bold;
+  cursor: default;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  color: white;
+  background-color: #A3331D;
+  padding-top: 40px;
+  z-index: 1;
 }
 
 .btn {
@@ -1249,6 +1769,16 @@ header {
   .welcome-description, .client-description {
     width: 50%;
   }
+  .input {
+    flex-direction: row;
+  }
+  .name, .email {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .marketing-info {
+    margin: 0 10px 25px 15px;
+  }
   .footer-container {
     margin-left: auto;
   }
@@ -1264,6 +1794,12 @@ header {
 @media screen and (min-width: 1024px) {
   .box-top {
     width: 300px;
+  }
+  .nav-hover-container {
+    padding-left: 20px;
+  }
+  .hover-li > a {
+    font-size: 19px;
   }
 }
 @media screen and (min-width: 1260px) {
@@ -1297,6 +1833,12 @@ header {
     justify-content: center;
     width: 100%;
   }
+  .triangle-software, .triangle-support, .triangle-marketing, .triangle-telecom, .triangle-design, .triangle-security, .triangle-course {
+    border-width: 30px 83.5px 0 83.5px;
+  }
+  .nav-hover-container {
+    padding-left: 30px;
+  }
   .box {
     width: 380px;
   }
@@ -1318,6 +1860,11 @@ header {
     display: inline-block;
     width: 31%;
   }
+  .newsletter-container {
+    max-width: 1200px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .footer-container {
     margin-left: auto;
   }
@@ -1328,6 +1875,11 @@ header {
   .top-footer {
     margin-right: 90px;
     justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .nav-hover-container {
+    padding-left: 100px;
   }
 }
 

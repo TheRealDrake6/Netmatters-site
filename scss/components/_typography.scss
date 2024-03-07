@@ -25,6 +25,11 @@ h2{
     color: #333645;
 }
 
+.nav-hover-title{
+    color: white;
+    margin-bottom: 16px;
+}
+
 .services-title > h2{
     float: left;
     font-size: 2.4rem;
@@ -148,4 +153,49 @@ a:hover{
 
 .poster-info > strong{
     color: #333645;
+}
+
+.name label, .email label{
+    font-weight: 600;
+}
+
+.newsletter-name:after, .newsletter-email:after{
+    color: #d64541;
+    content: "*";
+}
+
+.marketing-check + label{
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.marketing-check + label::before{
+    content: "";
+    float: left;
+    width: 26px;
+    height: 26px;
+    border: solid #333645 3px;
+    border-radius: 3px;
+    margin-right: 20px;
+    background-position: center;
+    background-size: 50%;
+}
+.marketing-check:checked + label::before{
+    content: url(../images./checkmark.png);
+    background-color: #333645;
+}
+
+label[for=check]{
+    float: left;
+}
+
+.newsletter-marketing{
+    font-weight: 600;
+    line-height: 23px;
+    cursor: pointer;
+}
+.newsletter-marketing a{
+    color: #333645;
+    text-decoration: underline;
 }
