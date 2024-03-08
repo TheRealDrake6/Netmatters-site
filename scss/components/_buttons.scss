@@ -1,22 +1,24 @@
 
-.blue{
-    background-color: #4183D7;
-    border: solid #4183D7 1px;
-    display: inline-block;
-    margin-right: 5px;
-}
-.blue:hover{
-    background-color: #2A6EC6;
-    border-color: #2A6EC6;
-}
-
-.gray {
-    background-color: #999AA2;
-    border: solid #999AA2 1px;
-}
-.gray:hover {
-    background-color: #84858F;
-    border-color: #84858F;
+@mixin button ($r:0px, $mt:0px, $mr:0px, $mb:0px, $ml:0px, $pt:0px, $pr:0px, $pb:0px, $pl:0px, $fs:1rem, $c:white, $lh: 40px, $h: auto, $ai: center, $tt:uppercase, $bc: #FFf, $fw:400){
+    cursor: pointer;
+    box-sizing: border-box;
+    align-items: $ai;
+    border-radius: $r;
+    margin-top: $mt;
+    margin-right: $mr;
+    margin-bottom: $mb;
+    margin-left: $ml;
+    padding-top: $pt;
+    padding-right: $pr;
+    padding-bottom: $pb;
+    padding-left: $pl;
+    text-transform: $tt;
+    font-size: $fs;
+    color: $c;
+    line-height: $lh;
+    height: $h;
+    background-color: $bc;
+    font-weight: $fw;
 }
 
 .support-btn{
@@ -29,19 +31,11 @@
 }
 
 .btn{
-    box-sizing: border-box;
-    cursor: pointer;
-    color: white;
-    border-radius: 3px;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    padding: 15px 18px;
-    font-weight: 400;
-    @extend %centered;
+    @include button($r:3px, $pt:15px, $pb:15px, $pl:18px, $pr:18px, $fs:1.1rem, $h:55px, $bc:#4183D7);
+    text-align: center;
     display: flex;
-    align-items: center;
-    height: 55px;
 }
+
 
 #search-bar-submit{
     padding: 3px 18px 0;
@@ -51,24 +45,7 @@
 
 .button-big{
     display: flex;
-    cursor: pointer;
-    color: white;
-    border-radius: 3px;
-    font-size: 1.25rem;
-    align-items: center;
-    text-transform: uppercase;
-    padding: 15px 30px;
-    margin-top: 20px;
-    margin-right: 10px;
-}
-
-.light-purple{
-    background-color: #926FB1;
-    border: solid #7E57A0 1px;
-}
-.light-purple:hover{
-    background-color: #7E57A0;
-    border: solid #7E57A0 1px;
+    @include button($r:3px,$mt:20px, $mr:10px, $pt:15px, $pb:15px, $pl:30px, $pr:30px, $fs:1.25rem);
 }
 
 .consent-btn{
@@ -88,15 +65,7 @@
 }
 
 .read-more-software{
-    font-size: 1.1rem;
-    height: auto;
-    line-height: 40px;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 3px;
-    background-color: #67809F;
+    @include button($r:3px, $pt:10px, $pb:10px, $pl:15px, $pr:15px, $fs:1.1rem, $bc:#67809F);
 }
 .software:hover .read-more{
     background-color: white;
@@ -104,15 +73,7 @@
 }
 
 .read-more-it-support{
-    font-size: 1.1rem;
-    height: auto;
-    line-height: 40px;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 3px;
-    background-color: #4183D7;
+    @include button($r:3px, $pt:10px, $pb:10px, $pl:15px, $pr:15px, $fs:1.1rem, $bc:#4183D7);
 }
 .it-support:hover .read-more{
     background-color: white;
@@ -120,15 +81,7 @@
 }
 
 .read-more-digital{
-    font-size: 1.1rem;
-    height: auto;
-    line-height: 40px;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 3px;
-    background-color: #2ECC71;
+    @include button($r:3px, $pt:10px, $pb:10px, $pl:15px, $pr:15px, $fs:1.1rem, $bc:#2ECC71);
 }
 .digital:hover .read-more{
     background-color: white;
@@ -136,15 +89,7 @@
 }
 
 .read-more-tele-services{
-    font-size: 1.1rem;
-    height: auto;
-    line-height: 40px;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 3px;
-    background-color: #D64541;
+    @include button($r:3px, $pt:10px, $pb:10px, $pl:15px, $pr:15px, $fs:1.1rem, $bc:#D64541);
 }
 .tele-services:hover .read-more{
     background-color: white;
@@ -152,15 +97,7 @@
 }
 
 .read-more-web-design{
-    font-size: 1.1rem;
-    height: auto;
-    line-height: 40px;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 3px;
-    background-color: #926FB1;
+    @include button($r:3px, $pt:10px, $pb:10px, $pl:15px, $pr:15px, $fs:1.1rem, $bc:#926FB1);
 }
 .web-design:hover .read-more{
     background-color: white;
@@ -168,15 +105,7 @@
 }
 
 .read-more-cyber{
-    font-size: 1.1rem;
-    height: auto;
-    line-height: 40px;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 3px;
-    background-color: #F62459;
+    @include button($r: 3px, $pt:10px, $pb:10px, $pl:15px, $pr:15px, $fs:1.1rem, $bc:#F62459);
 }
 .cyber:hover .read-more{
     background-color: white;
@@ -184,15 +113,7 @@
 }
 
 .read-more-developer{
-    font-size: 1.1rem;
-    height: auto;
-    line-height: 40px;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 3px;
-    background-color: #CE4125;
+    @include button($r: 3px, $pt:10px, $pb:10px, $pl:15px, $pr:15px, $fs:1.1rem, $bc:#CE4125);
 }
 .developer:hover .read-more{
     background-color: white;
@@ -200,14 +121,57 @@
 }
 
 .about-button{
-    cursor: pointer;
-    color: white;
-    border-radius: 6px;
-    font-size: 1.15rem;
-    text-transform: uppercase;
-    padding: 12px 25px;
-    margin-top: 20px;
-    margin-right: 10px;
+    @include button($r: 6px, $fs: 1.15rem, $pt:12px, $pr:25px, $pb:12px, $pl:25px, $mt:20px, $mr:10px)
+}
+
+.news-button-1{
+    @include button($fs:0.8rem, $fw:600, $bc:#d64541, $pl:10px, $pr:10px, $lh:1.5rem);
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 1;
+}
+
+.news-button-2{
+    @include button($fs:0.8rem, $fw:600, $bc:#67809f, $pl:10px, $pr:10px, $lh:1.5rem);
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 1;
+}
+
+.news-button-3{
+    @include button($fs:0.8rem, $fw:600, $bc:#2ecc71, $pl:10px, $pr:10px, $lh:1.5rem);
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 1;
+}
+
+.subscribe-btn{
+    @include button($fs:1.1rem, $bc:#333645, $r:3px, $pt:10px, $pr:15px, $pb:10px, $pl:15px, $mr:auto, $ml:15px);
+    border: solid #333645 1px;
+}
+.subscribe-btn:hover{
+    background-color: #22242E;
+}
+.blue{
+    background-color: #4183D7;
+    border: solid #4183D7 1px;
+    margin-right: 5px;
+}
+.blue:hover{
+    background-color: #2A6EC6;
+    border-color: #2A6EC6;
+}
+
+.gray {
+    background-color: #999AA2;
+    border: solid #999AA2 1px;
+}
+.gray:hover {
+    background-color: #84858F;
+    border-color: #84858F;
 }
 
 .dark{
@@ -229,59 +193,11 @@
     border: solid #009B69 1px;
 }
 
-.news-button-1{
-    position: absolute;
-    font-size: 0.8rem;
-    font-weight: 600;
-    top: 10px;
-    right: 0;
-    background-color: #d64541;
-    text-transform: uppercase;
-    padding: 0 10px;
-    line-height: 1.5rem;
-    z-index: 1;
+.light-purple{
+    background-color: #926FB1;
+    border: solid #7E57A0 1px;
 }
-
-.news-button-2{
-    position: absolute;
-    font-size: 0.8rem;
-    font-weight: 600;
-    top: 10px;
-    right: 0;
-    background-color: #67809f;
-    text-transform: uppercase;
-    padding: 0 10px;
-    line-height: 1.5rem;
-    z-index: 1;
-}
-
-.news-button-3{
-    position: absolute;
-    font-size: 0.8rem;
-    font-weight: 600;
-    top: 10px;
-    right: 0;
-    background-color: #2ecc71;
-    text-transform: uppercase;
-    padding: 0 10px;
-    line-height: 1.5rem;
-    z-index: 1;
-}
-
-.subscribe-btn{
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    text-align: center;
-    color: white;
-    background-color: #333645;
-    border: solid #333645 1px;
-    border-radius: 3px;
-    padding: 10px 15px;
-    cursor: pointer;
-    margin-right: auto;
-    margin-left: 15px;
-}
-.subscribe-btn:hover{
-    background-color: #22242E;
+.light-purple:hover{
+    background-color: #7E57A0;
+    border: solid #7E57A0 1px;
 }

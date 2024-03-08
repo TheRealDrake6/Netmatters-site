@@ -334,3 +334,20 @@ input[type="text" i]{
     margin-top: 17px;
     margin-left: 17px;
 }
+
+.partner-container, .client-container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow-x: hidden;
+}
+
+.partner-item, .client-item{
+    margin-right: 50px;
+    filter: grayscale(1);
+}
+
+.partner-item:hover, .client-item:hover{
+    filter: grayscale(0);
+}
