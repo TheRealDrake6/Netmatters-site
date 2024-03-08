@@ -27,10 +27,19 @@
     .search-bar-header {
         display: none;
     }
+    .news-title > a{
+        display: none;
+    }
+    .view-work{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 767px){
     .view-all {
+        display: none;
+    }
+    .view-work-bottom{
         display: none;
     }
 }
@@ -143,8 +152,6 @@
     }
     .box-bottom{
         width: 48%;
-        margin-left: 5px;
-        margin-right: 5px;
     }
     .row{
         flex-direction: row;
@@ -176,6 +183,9 @@
 }
 
 @media screen and (min-width: 1024px){
+    .main-block{
+        align-items: flex-start;
+    }
     .box-top{
         width: 300px;
     }
@@ -215,7 +225,6 @@
         width: 167px;
     }
     .services-block{
-        justify-content: center;
         width: 100%;
     }
     .triangle-software, .triangle-support, .triangle-marketing, .triangle-telecom, .triangle-design, .triangle-security, .triangle-course{

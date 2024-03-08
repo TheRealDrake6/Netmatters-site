@@ -32,7 +32,7 @@ h2{
 
 .services-title > h2{
     float: left;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     font-weight: 600;
 }
 
@@ -66,6 +66,7 @@ h3{
 
 .welcome-description > p, .client-description > p{
     line-height: 1.8rem;
+    margin-bottom: 19px;
 }
 
 .news-title > h2{
@@ -81,6 +82,10 @@ h3{
 
 .news-box{
     margin: 0;
+}
+
+.view-work-bottom a{
+    color: #333645;
 }
 
 a:hover{

@@ -22,6 +22,12 @@ input[type="text" i]{
     padding-right: 15px;
 }
 
+.main-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .main-img-container{
     display: flex;
     align-items: center;
@@ -95,8 +101,6 @@ input[type="text" i]{
     position: relative;
     width: 100%;
     margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
     border: solid #ccc 1px;
     border-radius: 15px;
     padding: 30px;
@@ -225,7 +229,6 @@ input[type="text" i]{
 }
 
 .review{
-    display: flex;
     padding-top: 15px;
 }
 
@@ -306,6 +309,12 @@ input[type="text" i]{
     margin-top: 5px;
 }
 
+#newsletter-name-input:focus, #newsletter-email-input:focus{
+    border-color: #5bc0de;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+
 .marketing-info{
     display: flex;
     text-wrap: wrap;
@@ -341,6 +350,7 @@ input[type="text" i]{
     padding-top: 50px;
     padding-bottom: 50px;
     overflow-x: hidden;
+    align-items: center;
 }
 
 .partner-item, .client-item{

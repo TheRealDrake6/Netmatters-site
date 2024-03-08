@@ -44,7 +44,6 @@
 }
 
 .button-big{
-    display: flex;
     @include button($r:3px,$mt:20px, $mr:10px, $pt:15px, $pb:15px, $pl:30px, $pr:30px, $fs:1.25rem);
 }
 
