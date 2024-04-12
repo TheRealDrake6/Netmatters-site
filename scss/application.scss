@@ -104,6 +104,13 @@
     .copyright{
         display: flex;
     }
+    .cookies-dialogue {
+        width: 600px;
+    }
+    .cookies-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 991px){
@@ -111,6 +118,9 @@
         display: none;
     }
     .nav-banner{
+        display: none;
+    }
+    .show-med {
         display: none;
     }
 }
@@ -179,6 +189,13 @@
     .main-footer > div{
         width: 190px;
         padding-right: 15px;
+    }
+    .hidden-med {
+        display: none;
+    }
+    .sidebar {
+        right: -350px;
+        width: 350px;
     }
 }
 

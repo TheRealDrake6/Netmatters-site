@@ -3,1113 +3,1623 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="hamburger/hamburger.css">
         <link rel="stylesheet" href="Styles/application.css">
         <title>Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
     </head>
-    <body>
-        <header>
-            <div class="container">
-                <div class="main-container">
-                    <div class="header-main">
-                        <div class="logo-container">
-                            <a href="#">
-                                <img src="images/netmatters_logo.png" alt="Netmatters Logo" class="logo">
-                            </a>
+    <body style="overflow: auto;">
+        <div class="overlay" style="display: none;"></div>
+        <div class="clickableoverlay" style="display: none;"></div>
+        <div class="main-body">
+            <header>
+                <div class="container">
+                    <div class="sticky-container">
+                        <div class="main-container">
+                            <div class="header-main">
+                                <div class="logo-container">
+                                    <a href="#">
+                                        <img src="images/netmatters_logo.png" alt="Netmatters Logo" class="logo">
+                                    </a>
+                                </div>
+                                <div class="support-btn">
+                                    <button type="submit" class="btn blue">
+                                        <img src="images/mouse.png" alt="mouse icon" class="icon">
+                                        support
+                                    </button>
+                                </div>
+                                <div class="contact-btn">
+                                    <button type="submit" class="btn gray">
+                                        <img src="images/paper-plane.png" alt="paper plane icon" class="icon">
+                                        contact
+                                    </button>
+                                </div>
+                                <div class="search-bar-header">
+                                    <input class="search-bar" placeholder=" Search..." id="search-bar-input" name="keyword" type="text">
+                                    <button type="submit" id="search-bar-submit" class="gray">
+                                        <img src="images/search-white.png" alt="search icon" class="search-icon">
+                                    </button>
+                                </div>
+                                <div class="phone-btn">
+                                    <a href="#">
+                                        <img src="images/phone.png" alt="Phone icon" class="search-icon">
+                                    </a>
+                                </div>
+                                <div class="nav-container-burger">
+                                    <button class="hamburger hamburger--spin" type="button">
+                                        <span class="hamburger-box">
+                                            <span class="hamburger-inner"></span>
+                                        </span>
+                                    </button>
+                                </div>
+                                <!-- <div class="nav-container-burger">
+                                    <div class="burger-container">
+                                        <span class="burger"></span>
+                                        <span class="burger"></span>
+                                        <span class="burger"></span>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="header-search-bar">
+                                <input class="search-bar-second" placeholder=" Search..." id="search-bar-input" name="keyword" type="text">
+                            </div>
                         </div>
-                        <div class="support-btn">
-                            <button type="submit" class="btn blue">
-                                <img src="images/mouse.png" alt="mouse icon" class="icon">
-                                support
-                            </button>
-                        </div>
-                        <div class="contact-btn">
-                            <button type="submit" class="btn gray">
-                                <img src="images/paper-plane.png" alt="paper plane icon" class="icon">
-                                contact
-                            </button>
-                        </div>
-                        <div class="search-bar-header">
-                            <input class="search-bar" placeholder=" Search..." id="search-bar-input" name="keyword" type="text">
-                            <button type="submit" id="search-bar-submit" class="gray">
-                                <img src="images/search-white.png" alt="search icon" class="search-icon">
-                            </button>
-                        </div>
-                        <div class="phone-btn">
-                            <a href="#">
-                                <img src="images/phone.png" alt="Phone icon" class="search-icon">
-                            </a>
-                        </div>
-                        <div class="nav-container-burger">
-                            <div class="burger-container">
-                                <span class="burger"></span>
-                                <span class="burger"></span>
-                                <span class="burger"></span>
+                        <div class="nav-banner">
+                            <div class="main-container">
+                                <div class="nav-container">
+                                    <div class="block bespoke">
+                                        <div class="nav-software nav-box">
+                                            <span class="nav-icon soft-icon">
+                                            </span>
+                                            <small class="small-nav">Bespoke</small>
+                                            Software
+                                        </div>
+                                        <div class="triangle-software"></div>
+                                        <div class="nav-hover-container software-hover">
+                                            <div class="main-container">
+                                                <h2 class="nav-hover-title"> Our Bespoke Software Services</h2>
+                                                <div class="hover-list">
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/cogs.png" alt="">
+                                                                Bespoke CRM
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/mobile.png" alt="">
+                                                                Mobile App Development
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/download3.png" alt="">
+                                                                Operational Systems
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/cloud1.png" alt="">
+                                                                Intranet Development
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/briefcase.png" alt="">
+                                                                Business Automation
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/folder-open.png" alt="">
+                                                                Bespoke Database
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/group.png" alt="">
+                                                                Business Central Implementation
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/cloud-download.png" alt="">
+                                                                Customer Portal Development
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/shuffle.png" alt="">
+                                                                Software Integrations
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/transfer.png" alt="">
+                                                                Sharepoint Development
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/laptop-small.png" alt="">
+                                                                Internet of Things (IoT) Software
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/earth.png" alt="">
+                                                                Reporting Hub
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block itsupport">
+                                        <div class="nav-support nav-box">
+                                            <span class="nav-icon sup-icon">
+                                            </span>
+                                            <small class="small-nav">IT</small>
+                                            Support
+                                        </div>
+                                        <div class="triangle-support"></div>
+                                        <div class="nav-hover-container support-hover">
+                                            <div class="main-container">
+                                                <h2 class="nav-hover-title">Our IT Support Services</h2>
+                                                <div class="hover-list">
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/headphones.png" alt="">
+                                                                Managed IT Support
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/graduation-cap-small.png" alt="">
+                                                                IT Consultancy
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/briefcase.png" alt="">
+                                                                Business IT Support
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/cloud1.png" alt="">
+                                                                Cloud Service Provider
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/laptop-small.png" alt="">
+                                                                Office 365 for Business
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/drive.png" alt="">
+                                                                Data Backup & Disaster Recovery
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block marketing">
+                                        <div class="nav-marketing nav-box">
+                                            <span class="nav-icon marketing-icon">
+                                            </span>
+                                            <small class="small-nav">Digital</small>
+                                            Marketing
+                                        </div>
+                                        <div class="triangle-marketing"></div>
+                                        <div class="nav-hover-container marketing-hover">
+                                            <div class="main-container">
+                                                <h2 class="nav-hover-title">Our Digital Marketing Services</h2>
+                                                <div class="hover-list">
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/search-small.png" alt="">
+                                                                Search Engine Optimisation (SEO)
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/envelope.png" alt="">
+                                                                Email Marketing
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/dollar.png" alt="">
+                                                                Pay Per Click Advertising (PPC)
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/group.png" alt="">
+                                                                Social Media Marketing
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/trending_up.png" alt="">
+                                                                Conversion Rate Optimisation (CRO)
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/edit-pencil.png" alt="">
+                                                                Content Marketing
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block telecom">
+                                        <div class="nav-telecom nav-box">
+                                            <span class="nav-icon tele-icon">
+                                            </span>
+                                            <small class="small-nav">Telecoms</small>
+                                            Services
+                                        </div>
+                                        <div class="triangle-telecom"></div>
+                                        <div class="nav-hover-container telecom-hover">
+                                            <div class="main-container">
+                                                <h2 class="nav-hover-title">Our Telecoms Services</h2>
+                                                <div class="hover-list">
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/ticket.png" alt="">
+                                                                Business Mobile
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/meter.png" alt="">
+                                                                Business Broadband
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/phone-small.png" alt="">
+                                                                Hosted VoIP Provider
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/handshake-o.png" alt="">
+                                                                Leased Lines Provider
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/phone-square.png" alt="">
+                                                                Business VoIP Systems
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/phone_in_talk-small.png" alt="">
+                                                                3CX Systems
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block design">
+                                        <div class="nav-design nav-box">
+                                            <span class="nav-icon design-icon">
+                                            </span>
+                                            <small class="small-nav">Web</small>
+                                            Design
+                                        </div>
+                                        <div class="triangle-design"></div>
+                                        <div class="nav-hover-container design-hover">
+                                            <div class="main-container">
+                                                <h2 class="nav-hover-title">Our Web Design Services</h2>
+                                                <div class="hover-list">
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/edit-pencil.png" alt="">
+                                                                Bespoke Website Design
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/bullhorn.png" alt="">
+                                                                Branding & Design
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/cart.png" alt="">
+                                                                eCommerce Website Design
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/mobile.png" alt="">
+                                                                Mobile App Development
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/computer-desktop-white.png" alt="">
+                                                                Pay Monthly Websites
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/cloud1.png" alt="">
+                                                                Web Hosting
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block security">
+                                        <div class="nav-security nav-box">
+                                            <span class="nav-icon security-icon">
+                                            </span>
+                                            <small class="small-nav">Cyber</small>
+                                            Security
+                                        </div>
+                                        <div class="triangle-security"></div>
+                                        <div class="nav-hover-container security-hover">
+                                            <div class="main-container">
+                                                <h2 class="nav-hover-title">Our Cyber Security Services</h2>
+                                                <div class="hover-list">
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/paste.png" alt="">
+                                                                Cyber Security Assessment
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/graduation-cap-small.png" alt="">
+                                                                Cyber Essentials Certification
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/clock.png" alt="">
+                                                                Cyber Security Management
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/shield-small.png" alt="">
+                                                                PCI Compliance
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/flask.png" alt="">
+                                                                Cyber Penetration Testing
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/lock.png" alt="">
+                                                                Hacking Prevention
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block courses">
+                                        <div class="nav-course nav-box">
+                                            <span class="nav-icon dev-icon">
+                                            </span>
+                                            <small class="small-nav">Developer</small>
+                                            Course
+                                        </div>
+                                        <div class="triangle-course"></div>
+                                        <div class="nav-hover-container courses-hover">
+                                            <div class="main-container">
+                                                <h2 class="nav-hover-title">Our Developer Course Services</h2>
+                                                <div class="hover-list">
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/laptop-small.png" alt="">
+                                                                Train For A Career In Tech
+                                                            </a>
+                                                        </li>
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/handshake-o.png" alt="">
+                                                                Scion Collaborators
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/embed2-white.png" alt="">
+                                                                Skills Bootcamp
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hover-ul">
+                                                        <li class="hover-li">
+                                                            <a href="#">
+                                                                <img src="images/question.png" alt="">
+                                                                Scion Scheme Frequently Asked Questions
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="header-search-bar">
-                        <input class="search-bar-second" placeholder=" Search..." id="search-bar-input" name="keyword" type="text">
+                </div>
+            </header>
+            <div class="main-img-container">
+                <div class="main-container">
+                    <div class="main-text">
+                        <div class="main-block">
+                            <div class="main-title">
+                                The East Of England's Leading Technology Company
+                                <p class="main-subtext">Performance-driven digital and technology services<br>
+                                with complete transparency.</p>
+                                <button name="submit" class="button-big light-purple">
+                                    Why choose us?
+                                    <img src="images/arrow-right.png" class="right-arrow" alt="Right arrow">
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="nav-banner">
+            </div>
+            <div class="middle-container">
+                <div class="services">
                     <div class="main-container">
-                        <div class="nav-container">
-                            <div class="block bespoke">
-                                <div class="nav-software nav-box">
-                                    <span class="nav-icon soft-icon">
-                                    </span>
-                                    <small class="small-nav">Bespoke</small>
-                                     Software
-                                </div>
-                                <div class="triangle-software"></div>
-                                <div class="nav-hover-container software-hover">
-                                    <div class="main-container">
-                                        <h2 class="nav-hover-title"> Our Bespoke Software Services</h2>
-                                        <div class="hover-list">
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/cogs.png" alt="">
-                                                        Bespoke CRM
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/mobile.png" alt="">
-                                                        Mobile App Development
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/download3.png" alt="">
-                                                        Operational Systems
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/cloud1.png" alt="">
-                                                        Intranet Development
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/briefcase.png" alt="">
-                                                        Business Automation
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/folder-open.png" alt="">
-                                                        Bespoke Database
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/group.png" alt="">
-                                                        Business Central Implementation
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/cloud-download.png" alt="">
-                                                        Customer Portal Development
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/shuffle.png" alt="">
-                                                        Software Integrations
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/transfer.png" alt="">
-                                                        Sharepoint Development
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/laptop-small.png" alt="">
-                                                        Internet of Things (IoT) Software
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/earth.png" alt="">
-                                                        Reporting Hub
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block itsupport">
-                                <div class="nav-support nav-box">
-                                    <span class="nav-icon sup-icon">
-                                    </span>
-                                    <small class="small-nav">IT</small>
-                                     Support
-                                </div>
-                                <div class="triangle-support"></div>
-                                <div class="nav-hover-container support-hover">
-                                    <div class="main-container">
-                                        <h2 class="nav-hover-title">Our IT Support Services</h2>
-                                        <div class="hover-list">
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/headphones.png" alt="">
-                                                        Managed IT Support
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/graduation-cap-small.png" alt="">
-                                                        IT Consultancy
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/briefcase.png" alt="">
-                                                        Business IT Support
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/cloud1.png" alt="">
-                                                        Cloud Service Provider
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/laptop-small.png" alt="">
-                                                        Office 365 for Business
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/drive.png" alt="">
-                                                        Data Backup & Disaster Recovery
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block marketing">
-                                <div class="nav-marketing nav-box">
-                                    <span class="nav-icon marketing-icon">
-                                    </span>
-                                    <small class="small-nav">Digital</small>
-                                     Marketing
-                                </div>
-                                <div class="triangle-marketing"></div>
-                                <div class="nav-hover-container marketing-hover">
-                                    <div class="main-container">
-                                        <h2 class="nav-hover-title">Our Digital Marketing Services</h2>
-                                        <div class="hover-list">
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/search-small.png" alt="">
-                                                        Search Engine Optimisation (SEO)
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/envelope.png" alt="">
-                                                        Email Marketing
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/dollar.png" alt="">
-                                                        Pay Per Click Advertising (PPC)
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/group.png" alt="">
-                                                        Social Media Marketing
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/trending_up.png" alt="">
-                                                        Conversion Rate Optimisation (CRO)
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/edit-pencil.png" alt="">
-                                                        Content Marketing
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block telecom">
-                                <div class="nav-telecom nav-box">
-                                    <span class="nav-icon tele-icon">
-                                    </span>
-                                    <small class="small-nav">Telecoms</small>
-                                     Services
-                                </div>
-                                <div class="triangle-telecom"></div>
-                                <div class="nav-hover-container telecom-hover">
-                                    <div class="main-container">
-                                        <h2 class="nav-hover-title">Our Telecoms Services</h2>
-                                        <div class="hover-list">
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/ticket.png" alt="">
-                                                        Business Mobile
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/meter.png" alt="">
-                                                        Business Broadband
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/phone-small.png" alt="">
-                                                        Hosted VoIP Provider
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/handshake-o.png" alt="">
-                                                        Leased Lines Provider
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/phone-square.png" alt="">
-                                                        Business VoIP Systems
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/phone_in_talk-small.png" alt="">
-                                                        3CX Systems
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block design">
-                                <div class="nav-design nav-box">
-                                    <span class="nav-icon design-icon">
-                                    </span>
-                                    <small class="small-nav">Web</small>
-                                     Design
-                                </div>
-                                <div class="triangle-design"></div>
-                                <div class="nav-hover-container design-hover">
-                                    <div class="main-container">
-                                        <h2 class="nav-hover-title">Our Web Design Services</h2>
-                                        <div class="hover-list">
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/edit-pencil.png" alt="">
-                                                        Bespoke Website Design
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/bullhorn.png" alt="">
-                                                        Branding & Design
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/cart.png" alt="">
-                                                        eCommerce Website Design
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/mobile.png" alt="">
-                                                        Mobile App Development
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/computer-desktop-white.png" alt="">
-                                                        Pay Monthly Websites
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/cloud1.png" alt="">
-                                                        Web Hosting
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block security">
-                                <div class="nav-security nav-box">
-                                    <span class="nav-icon security-icon">
-                                    </span>
-                                    <small class="small-nav">Cyber</small>
-                                     Security
-                                </div>
-                                <div class="triangle-security"></div>
-                                <div class="nav-hover-container security-hover">
-                                    <div class="main-container">
-                                        <h2 class="nav-hover-title">Our Cyber Security Services</h2>
-                                        <div class="hover-list">
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/paste.png" alt="">
-                                                        Cyber Security Assessment
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/graduation-cap-small.png" alt="">
-                                                        Cyber Essentials Certification
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/clock.png" alt="">
-                                                        Cyber Security Management
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/shield-small.png" alt="">
-                                                        PCI Compliance
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/flask.png" alt="">
-                                                        Cyber Penetration Testing
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/lock.png" alt="">
-                                                        Hacking Prevention
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block courses">
-                                <div class="nav-course nav-box">
-                                    <span class="nav-icon dev-icon">
-                                    </span>
-                                    <small class="small-nav">Developer</small>
-                                     Course
-                                </div>
-                                <div class="triangle-course"></div>
-                                <div class="nav-hover-container courses-hover">
-                                    <div class="main-container">
-                                        <h2 class="nav-hover-title">Our Developer Course Services</h2>
-                                        <div class="hover-list">
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/laptop-small.png" alt="">
-                                                        Train For A Career In Tech
-                                                    </a>
-                                                </li>
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/handshake-o.png" alt="">
-                                                        Scion Collaborators
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/embed2-white.png" alt="">
-                                                        Skills Bootcamp
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <ul class="hover-ul">
-                                                <li class="hover-li">
-                                                    <a href="#">
-                                                        <img src="images/question.png" alt="">
-                                                        Scion Scheme Frequently Asked Questions
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="main-img-container">
-            <div class="main-container">
-                <div class="main-text">
-                    <div class="main-block">
-                        <div class="main-title">
-                            The East Of England's Leading Technology Company
-                            <p class="main-subtext">Performance-driven digital and technology services<br>
-                            with complete transparency.</p>
-                            <button name="submit" class="button-big light-purple">
-                                Why choose us?
-                                <img src="images/arrow-right.png" class="right-arrow" alt="Right arrow">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="middle-container">
-            <div class="services">
-                <div class="main-container">
-                    <div class="services-title">
-                        <h2>Our Services</h2>
-                        <a href="#" class="view-work">
-                            <h3>
-                                View Our view
-                                <img src="images/arrow-right-black.png" class="right-arrow" alt="Right arrow">
-                            </h3>
-                        </a>
-                    </div>
-                    <div class="services-block">
-                        <a href="#" class="software box box-top">
-                            <span class="icon software-icon big-icon"></span>
-                            <span class="block-title">Bespoke Software</span>
-                            <p class="description">Bespoke software solutions for all your buisness needs including intergrations and reporting.</p>
-                            <div class="button-container">
-                                <span class="read-more read-more-software">Read More</span>
-                            </div>
-                        </a>
-                        <a href="#" class="it-support box box-top">
-                            <span class="icon it-support-icon big-icon"></span>
-                            <span class="block-title">IT Support</span>
-                            <p class="description">Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
-                            <div class="button-container">
-                                <span class="read-more read-more-it-support">Read More</span>
-                            </div>
-                        </a>
-                        <a href="#" class="digital box box-top">
-                            <span class="icon digital-icon big-icon"></span>
-                            <span class="block-title">Digital Marketing</span>
-                            <p class="description">Driven brand awareness & ROI through creative digital marketing compaigns.</p>
-                            <div class="button-container">
-                                <span class="read-more read-more-digital">Read More</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="services-block-bottom">
-                        <a href="#" class="tele-services box box-bottom">
-                            <span class="icon tele-services-icon big-icon"></span>
-                            <span class="block-title">Telecoms Services</span>
-                            <p class="description">Business telephony solutions including mobile & connectivity solutions.</p>
-                            <div class="button-container">
-                                <span class="read-more read-more-tele-services">Read More</span>
-                            </div>
-                        </a>
-                        <a href="#" class="web-design box box-bottom">
-                            <span class="icon web-design-icon big-icon"></span>
-                            <span class="block-title">Web Design</span>
-                            <p class="description">User-centric design for businesses looking to make a lasting impression.</p>
-                            <div class="button-container">
-                                <span class="read-more read-more-web-design">Read More</span>
-                            </div>
-                        </a>
-                        <a href="#" class="cyber box box-bottom">
-                            <span class="icon cyber-icon big-icon"></span>
-                            <span class="block-title">Cyber Security</span>
-                            <p class="description">Prevention, testing, consultancy & breach management services.</p>
-                            <div class="button-container">
-                                <span class="read-more read-more-cyber">Read More</span>
-                            </div>
-                        </a>
-                        <a href="#" class="developer box box-bottom">
-                            <span class="icon developer-icon big-icon"></span>
-                            <span class="block-title">Developer Training</span>
-                            <p class="description">Web design & software Training courses designed to secure a job in tech.</p>
-                            <div class="button-container">
-                                <span class="read-more read-more-developer">Read More</span>
-                            </div>
-                        </a>
-                        <div class="view-work-bottom">
-                            <h3>
-                                View Our work
-                                <img src="images/arrow-right-black.png" class="right-arrow" alt="Right arrow">
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="partner-banner">
-                <div class="partner-container">
-                    <div class="partner-item">
-                        <img src="images/investing-in-future-growth.png" class="pi-1" alt="Investing in future growth">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/norfolk-carbon-charter.png" class="pi-2" alt="Norfolk carbon charter">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/PPC_logo.png" class="pi-3" alt="Prompt payment code">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/princess-royal-training.png" class="pi-4" alt="Princess royal training">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/future-50.png" class="pi-5" alt="Future 50">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/qms.png" class="pi-6" alt="qms">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/iso_27001.png" class="pi-7" alt="iso">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/skills-of-tomorrow.png" class="pi-8" alt="Skills of tomorrow">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/google-partner.png" class="pi-9" alt="Google partner">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/living_wage.png" class="pi-10" alt="Living wage">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/norfolk_prohelp.png" class="pi-11" alt="Norfolk prohelp">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/investing-in-future-growth.png" class="pi-1" alt="Investing in future growth">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/norfolk-carbon-charter.png" class="pi-2" alt="Norfolk carbon charter">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/PPC_logo.png" class="pi-3" alt="Prompt payment code">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/princess-royal-training.png" class="pi-4" alt="Princess royal training">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/future-50.png" class="pi-5" alt="Future 50">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/qms.png" class="pi-6" alt="qms">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/iso_27001.png" class="pi-7" alt="iso">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/skills-of-tomorrow.png" class="pi-8" alt="Skills of tomorrow">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/google-partner.png" class="pi-9" alt="Google partner">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/living_wage.png" class="pi-10" alt="Living wage">
-                    </div>
-                    <div class="partner-item">
-                        <img src="images/norfolk_prohelp.png" class="pi-11" alt="Norfolk prohelp">
-                    </div>
-                </div>
-            </div>
-            <div class="welcome">
-                <div class="main-container">
-                    <div class="row">
-                        <div class="welcome-description">
-                            <h2>Welcome To Netmatters</h2>
-                            <p>
-                                <strong>
-                                    Netmatters is a leading 
-                                    <a href="#">Bespoke Software</a>
-                                    , 
-                                    <a href="#">IT Support</a>
-                                    , and 
-                                    <a href="#">Digital Marketing</a>
-                                        company based in the East of England with offices in London, Cambridge, Wymondham, and Great Yarmouth.
-                                </strong>
-                            </p>
-                            <p>
-                                We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.
-                            </p>
-                            <p>
-                                We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.
-                            </p>
-                            <div>
-                                <button name="submit" class="about-button dark">
-                                    Why Choose us?
-                                    <img src="images/arrow-right.png" class="right-arrow" alt="Right arrow">
-                                </button>
-                                <button name="submit" class="about-button dark">
-                                    Our Culture
-                                    <img src="images/arrow-right.png" class="right-arrow" alt="Right arrow">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="client-description">
-                            <h2>What Our Clients Think</h2>
-                            <div class="stars">
-                                <img src="images/star.png" class="star" alt="Star">
-                                <img src="images/star.png" class="star" alt="Star">
-                                <img src="images/star.png" class="star" alt="Star">
-                                <img src="images/star.png" class="star" alt="Star">
-                                <img src="images/star.png" class="star" alt="Star">
-                            </div>
-                            <div class="quotes">
-                                <div class="quote-1">
-                                    Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!
-                                </div>
-                            </div>
-                            <div class="author">
-                                <span class="author-text">
-                                    Eleanor Bishop, Head of Marketing - 
-                                    <a href="#">Ashcroft Partnership LLP</a>
-                                </span>
-                            </div>
-                            <div class="review">
-                                <button name="submit" class="about-button blue">
-                                    Google Reviews
-                                    <img src="images/arrow-right.png" class="right-arrow" alt="Right arrow">
-                                </button>
-                                <button name="submit" class="about-button green">
-                                    Trustpilot Reviews
-                                    <img src="images/arrow-right.png" class="right-arrow" alt="Right arrow">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="news">
-                <div class="main-container">
-                    <div class="news-title">
-                        <h2>Latest News</h2>
-                        <a href="#">
-                            <h3>
-                                View All
-                                <img src="images/arrow-right-black.png" class="right-arrow" alt="Right arrow">
-                            </h3>
-                        </a>
-                    </div>
-                    <div class="news-box">
-                        <div class="news-1 block-news">
-                            <a href="#" class="article"></a>
-                            <div class="news-container-img">
-                                <a href="#" class="news-button-1">News</a>
-                                <a href="#" class="news-img-link">
-                                    <img src="images/news1.png" class="news-img" alt="East Anglian Air Ambulance">
-                                </a>
-                            </div>
-                            <div class="news-text-1">
-                                <a href="#">East Anglian Air Ambulance - introducing a 3C...</a>
-                                <span class="read-time"> - 4 Minute Read</span>
-                                <p>The Client Championing 'Your Local Life - saving Charity' the East Anglian Air Ambulance (EAAA) is a r...</p>
-                                <span class="read-more read-more-tele-services">Read More</span>
-                                <div class="poster">
-                                    <div class="poster-avatar">
-                                        <img src="images/netmatters-logo-circle.png" class="logo-circle" alt="Netmatters logo">
-                                    </div>
-                                    <div class="poster-info">
-                                        <strong>Posted by Netmatters</strong>
-                                        <br>
-                                        26th February 2024
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news-2 block-news">
-                            <a href="#" class="article"></a>
-                            <div class="news-container-img">
-                                <a href="#" class="news-button-2">Insights</a>
-                                <a href="#" class="news-img-link">
-                                    <img src="images/news2.png" class="news-img" alt="East Anglian Air Ambulance">
-                                </a>
-                            </div>
-                            <div class="news-text-2">
-                                <a href="#">What is business software and how can it help...</a>
-                                <span class="read-time"></span>
-                                <p>What is business software and how can it help your business? If the thought of a CRM cystem or intra...</p>
-                                <span class="read-more read-more-software">Read More</span>
-                                <div class="poster">
-                                    <div class="poster-avatar">
-                                        <img src="images/netmatters-logo-circle.png" class="logo-circle" alt="Netmatters logo">
-                                    </div>
-                                    <div class="poster-info">
-                                        <strong>Posted by Netmatters</strong>
-                                        <br>
-                                        21st February 2024
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news-3 block-news">
-                            <a href="#" class="article"></a>
-                            <div class="news-container-img">
-                                <a href="#" class="news-button-3">Careers</a>
-                                <a href="#" class="news-img-link">
-                                    <img src="images/news3.png" class="news-img" alt="East Anglian Air Ambulance">
-                                </a>
-                            </div>
-                            <div class="news-text-3">
-                                <a href="#">Business Development Executive</a>
-                                <span class="read-time"></span>
-                                <p>Salary Range £26k-£36k per annum + Bonus Hours 40 hours per week, Monday - Friday Location Wymondha...</p>
-                                <span class="read-more read-more-digital">Read More</span>
-                                <div class="poster">
-                                    <div class="poster-avatar">
-                                        <img src="images/rebecca-moore.png" class="logo-circle" alt="Netmatters logo">
-                                    </div>
-                                    <div class="poster-info">
-                                        <strong>Posted by Rebecca Moore</strong>
-                                        <br>
-                                        20th February 2024
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="view-all">
-                            <a href="#">
+                        <div class="services-title">
+                            <h2>Our Services</h2>
+                            <a href="#" class="view-work">
                                 <h3>
-                                    View all
+                                    View Our view
                                     <img src="images/arrow-right-black.png" class="right-arrow" alt="Right arrow">
                                 </h3>
                             </a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="client-banner">
-                <div class="client-container">
-                    <div class="client-item">
-                        <img src="images/ashcroftlogo_landscape_goldblack_DP60P-small.png" class="ci-1" alt="Ashcroft">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/onetravellerlogo_white_figuire.png" class="ci-2" alt="One traveller">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/searles_logo.png" class="ci-3" alt="Searles">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/busseys_logo.png" class="ci-4" alt="Busseys">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/crane_logo.png" class="ci-5" alt="Crane">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/black_swan_logo.png" class="ci-6" alt="Black swan">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/xupes_logo.png" class="ci-7" alt="Xupes">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/beat_logo.png" class="ci-8" alt="Beat">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/survey_solutions_logo.png" class="ci-9" alt="Survey solutions">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/girl_guides_anglia_logo.png" class="ci-10" alt="Girl guides">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/sweetzy_logo.png" class="ci-11" alt="Sweetzy">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/howespercivallogo.png" class="ci-12" alt="Howes percival">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/girls_day_school_trust_logob.png" class="ci-13" alt="Girl day school trust">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/ashcroftlogo_landscape_goldblack_DP60P-small.png" class="ci-1" alt="Ashcroft">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/onetravellerlogo_white_figuire.png" class="ci-2" alt="One traveller">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/searles_logo.png" class="ci-3" alt="Searles">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/busseys_logo.png" class="ci-4" alt="Busseys">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/crane_logo.png" class="ci-5" alt="Crane">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/black_swan_logo.png" class="ci-6" alt="Black swan">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/xupes_logo.png" class="ci-7" alt="Xupes">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/beat_logo.png" class="ci-8" alt="Beat">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/survey_solutions_logo.png" class="ci-9" alt="Survey solutions">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/girl_guides_anglia_logo.png" class="ci-10" alt="Girl guides">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/sweetzy_logo.png" class="ci-11" alt="Sweetzy">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/howespercivallogo.png" class="ci-12" alt="Howes percival">
-                    </div>
-                    <div class="client-item">
-                        <img src="images/girls_day_school_trust_logob.png" class="ci-13" alt="Girl day school trust">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="newsletter">
-            <div class="main-container">
-                <div class="newsletter-container">
-                    <h2>Email Newsletter Sign-up</h2>
-                    <div class="input">
-                        <div class="name">
-                            <label for="newsletter-name-input" class="newsletter-name">
-                                Your Name
-                            </label>
-                            <input id="newsletter-name-input" name="name" type="text">
+                        <div class="services-block">
+                            <a href="#" class="software box box-top">
+                                <span class="icon software-icon big-icon"></span>
+                                <span class="block-title">Bespoke Software</span>
+                                <p class="description">Bespoke software solutions for all your buisness needs including intergrations and reporting.</p>
+                                <div class="button-container">
+                                    <span class="read-more read-more-software">Read More</span>
+                                </div>
+                            </a>
+                            <a href="#" class="it-support box box-top">
+                                <span class="icon it-support-icon big-icon"></span>
+                                <span class="block-title">IT Support</span>
+                                <p class="description">Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
+                                <div class="button-container">
+                                    <span class="read-more read-more-it-support">Read More</span>
+                                </div>
+                            </a>
+                            <a href="#" class="digital box box-top">
+                                <span class="icon digital-icon big-icon"></span>
+                                <span class="block-title">Digital Marketing</span>
+                                <p class="description">Driven brand awareness & ROI through creative digital marketing compaigns.</p>
+                                <div class="button-container">
+                                    <span class="read-more read-more-digital">Read More</span>
+                                </div>
+                            </a>
                         </div>
-                        <div class="email">
-                            <label for="newsletter-email-input" class="newsletter-email">
-                                Your Email
-                            </label>
-                            <input id="newsletter-email-input" name="email" type="email">
-                        </div>
-                    </div>
-                    <div class="marketing-info">
-                        <span class="checkbox">
-                            <input class="marketing-check" id="check" type="checkbox">
-                            <label for="check">
-                                
-                            </label>
-                        </span>
-                        <label for="check" class="newsletter-marketing">
-                            please tick this box if you wish to recieve marketing information from us. Please see our 
-                            <a href="index.html" target="_blank">Privacy Policy</a>
-                             for more information on how we keep your data safe.
-                        </label>
-                    </div>
-                    <button name="submit" class="subscribe-btn">Subscribe</button>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <div class="footer-container">
-                <div class="main-container">
-                    <div class="footer-nav">
-                        <div class="top-footer">
-                            <div class="footer-logo">
-                                <img src="images/netmatters_logo_white.png" class="footer-img" alt="Netmatters Logo">
+                        <div class="services-block-bottom">
+                            <a href="#" class="tele-services box box-bottom">
+                                <span class="icon tele-services-icon big-icon"></span>
+                                <span class="block-title">Telecoms Services</span>
+                                <p class="description">Business telephony solutions including mobile & connectivity solutions.</p>
+                                <div class="button-container">
+                                    <span class="read-more read-more-tele-services">Read More</span>
+                                </div>
+                            </a>
+                            <a href="#" class="web-design box box-bottom">
+                                <span class="icon web-design-icon big-icon"></span>
+                                <span class="block-title">Web Design</span>
+                                <p class="description">User-centric design for businesses looking to make a lasting impression.</p>
+                                <div class="button-container">
+                                    <span class="read-more read-more-web-design">Read More</span>
+                                </div>
+                            </a>
+                            <a href="#" class="cyber box box-bottom">
+                                <span class="icon cyber-icon big-icon"></span>
+                                <span class="block-title">Cyber Security</span>
+                                <p class="description">Prevention, testing, consultancy & breach management services.</p>
+                                <div class="button-container">
+                                    <span class="read-more read-more-cyber">Read More</span>
+                                </div>
+                            </a>
+                            <a href="#" class="developer box box-bottom">
+                                <span class="icon developer-icon big-icon"></span>
+                                <span class="block-title">Developer Training</span>
+                                <p class="description">Web design & software Training courses designed to secure a job in tech.</p>
+                                <div class="button-container">
+                                    <span class="read-more read-more-developer">Read More</span>
+                                </div>
+                            </a>
+                            <div class="view-work-bottom">
+                                <h3>
+                                    View Our work
+                                    <img src="images/arrow-right-black.png" class="right-arrow" alt="Right arrow">
+                                </h3>
                             </div>
-                            <div class="social">
-                                <h4>Follow us on:</h4>
-                                <div class="social-icon">
-                                    <div class="social-upper">
-                                        <a class="social-btn facebook" href="#" target="blank">
-                                            <span class="facebook-logo">
-                                                <img src="images/facebook.png" class="facebook-icon" alt="Facebook logo">
-                                            </span>
-                                        </a>
-                                        <a class="social-btn linkedin" href="#" target="blank">
-                                            <span class="linkedin-logo">
-                                                <img src="images/linkedin2.png" class="linkedin-icon" alt="linkedin logo">
-                                            </span>
-                                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-banner">
+                    <div class="partner-container">
+                        <div class="partner-item">
+                            <img src="images/investing-in-future-growth.png" class="pi-1" alt="Investing in future growth">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/norfolk-carbon-charter.png" class="pi-2" alt="Norfolk carbon charter">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/PPC_logo.png" class="pi-3" alt="Prompt payment code">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/princess-royal-training.png" class="pi-4" alt="Princess royal training">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/future-50.png" class="pi-5" alt="Future 50">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/qms.png" class="pi-6" alt="qms">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/iso_27001.png" class="pi-7" alt="iso">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/skills-of-tomorrow.png" class="pi-8" alt="Skills of tomorrow">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/google-partner.png" class="pi-9" alt="Google partner">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/living_wage.png" class="pi-10" alt="Living wage">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/norfolk_prohelp.png" class="pi-11" alt="Norfolk prohelp">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/investing-in-future-growth.png" class="pi-1" alt="Investing in future growth">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/norfolk-carbon-charter.png" class="pi-2" alt="Norfolk carbon charter">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/PPC_logo.png" class="pi-3" alt="Prompt payment code">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/princess-royal-training.png" class="pi-4" alt="Princess royal training">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/future-50.png" class="pi-5" alt="Future 50">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/qms.png" class="pi-6" alt="qms">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/iso_27001.png" class="pi-7" alt="iso">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/skills-of-tomorrow.png" class="pi-8" alt="Skills of tomorrow">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/google-partner.png" class="pi-9" alt="Google partner">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/living_wage.png" class="pi-10" alt="Living wage">
+                        </div>
+                        <div class="partner-item">
+                            <img src="images/norfolk_prohelp.png" class="pi-11" alt="Norfolk prohelp">
+                        </div>
+                    </div>
+                </div>
+                <div class="welcome">
+                    <div class="main-container">
+                        <div class="row">
+                            <div class="welcome-description">
+                                <h2>Welcome To Netmatters</h2>
+                                <p>
+                                    <strong>
+                                        Netmatters is a leading 
+                                        <a href="#">Bespoke Software</a>
+                                        , 
+                                        <a href="#">IT Support</a>
+                                        , and 
+                                        <a href="#">Digital Marketing</a>
+                                            company based in the East of England with offices in London, Cambridge, Wymondham, and Great Yarmouth.
+                                    </strong>
+                                </p>
+                                <p>
+                                    We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.
+                                </p>
+                                <p>
+                                    We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.
+                                </p>
+                                <div>
+                                    <button name="submit" class="about-button dark">
+                                        Why Choose us?
+                                        <img src="images/arrow-right.png" class="right-arrow" alt="Right arrow">
+                                    </button>
+                                    <button name="submit" class="about-button dark">
+                                        Our Culture
+                                        <img src="images/arrow-right.png" class="right-arrow" alt="Right arrow">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="client-description">
+                                <h2>What Our Clients Think</h2>
+                                <div class="stars">
+                                    <img src="images/star.png" class="star" alt="Star">
+                                    <img src="images/star.png" class="star" alt="Star">
+                                    <img src="images/star.png" class="star" alt="Star">
+                                    <img src="images/star.png" class="star" alt="Star">
+                                    <img src="images/star.png" class="star" alt="Star">
+                                </div>
+                                <div class="quotes">
+                                    <div class="quote-1">
+                                        Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!
                                     </div>
-                                    <div class="social-lower">
-                                        <a class="social-btn twitter" href="#" target="blank">
-                                            <span class="twitter-logo">
-                                                <img src="images/twitter.png" class="twitter-icon" alt="Twitter logo">
-                                            </span>
-                                        </a>
-                                        <a class="social-btn insta" href="#" target="blank">
-                                            <span class="insta-logo">
-                                                <img src="images/instagram.png" class="insta-icon" alt="Instagram logo">
-                                            </span>
-                                        </a>
-                                    </div>
+                                </div>
+                                <div class="author">
+                                    <span class="author-text">
+                                        Eleanor Bishop, Head of Marketing - 
+                                        <a href="#">Ashcroft Partnership LLP</a>
+                                    </span>
+                                </div>
+                                <div class="review">
+                                    <button name="submit" class="about-button blue">
+                                        Google Reviews
+                                        <img src="images/arrow-right.png" class="right-arrow" alt="Right arrow">
+                                    </button>
+                                    <button name="submit" class="about-button green">
+                                        Trustpilot Reviews
+                                        <img src="images/arrow-right.png" class="right-arrow" alt="Right arrow">
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="main-footer">
-                            <div class="footer-about">
-                                <h4>About Netmatters</h4>
-                                <ul>
-                                    <li>
-                                        <a href="#">News</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Our Careers</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Our Team</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Contact Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Privacy Policy</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Cookie Policy</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Data Retention & Disposal Policy</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">CCTV Policy</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Environmental Policy</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Terms & Conditions</a>
-                                    </li>
-                                </ul>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="main-container">
+                        <div class="news-title">
+                            <h2>Latest News</h2>
+                            <a href="#">
+                                <h3>
+                                    View All
+                                    <img src="images/arrow-right-black.png" class="right-arrow" alt="Right arrow">
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="news-box">
+                            <div class="news-1 block-news">
+                                <a href="#" class="article"></a>
+                                <div class="news-container-img">
+                                    <a href="#" class="news-button-1">News</a>
+                                    <a href="#" class="news-img-link">
+                                        <img src="images/news1.png" class="news-img" alt="East Anglian Air Ambulance">
+                                    </a>
+                                </div>
+                                <div class="news-text-1">
+                                    <a href="#">East Anglian Air Ambulance - introducing a 3C...</a>
+                                    <span class="read-time"> - 4 Minute Read</span>
+                                    <p>The Client Championing 'Your Local Life - saving Charity' the East Anglian Air Ambulance (EAAA) is a r...</p>
+                                    <span class="read-more read-more-tele-services">Read More</span>
+                                    <div class="poster">
+                                        <div class="poster-avatar">
+                                            <img src="images/netmatters-logo-circle.png" class="logo-circle" alt="Netmatters logo">
+                                        </div>
+                                        <div class="poster-info">
+                                            <strong>Posted by Netmatters</strong>
+                                            <br>
+                                            26th February 2024
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="footer-service">
-                                <h4>Our Services</h4>
-                                <ul>
-                                    <li>
-                                        <a href="#">Bespoke Software</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">IT Support</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Digital Marketing</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Telecoms Services</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Web Design</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Cyber Security</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Developer Training</a>
-                                    </li>
-                                </ul>
+                            <div class="news-2 block-news">
+                                <a href="#" class="article"></a>
+                                <div class="news-container-img">
+                                    <a href="#" class="news-button-2">Insights</a>
+                                    <a href="#" class="news-img-link">
+                                        <img src="images/news2.png" class="news-img" alt="East Anglian Air Ambulance">
+                                    </a>
+                                </div>
+                                <div class="news-text-2">
+                                    <a href="#">What is business software and how can it help...</a>
+                                    <span class="read-time"></span>
+                                    <p>What is business software and how can it help your business? If the thought of a CRM cystem or intra...</p>
+                                    <span class="read-more read-more-software">Read More</span>
+                                    <div class="poster">
+                                        <div class="poster-avatar">
+                                            <img src="images/netmatters-logo-circle.png" class="logo-circle" alt="Netmatters logo">
+                                        </div>
+                                        <div class="poster-info">
+                                            <strong>Posted by Netmatters</strong>
+                                            <br>
+                                            21st February 2024
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="footer-industry">
-                                <h4>Our Industries</h4>
-                                <ul>
-                                    <li>
-                                        <a href="#">Financial Services</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Construction</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Retail & E-commerce</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Non-Profits</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">SME's</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Healthcare</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Education & Training</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Travel & Leisure</a>
-                                    </li>
-                                </ul>
+                            <div class="news-3 block-news">
+                                <a href="#" class="article"></a>
+                                <div class="news-container-img">
+                                    <a href="#" class="news-button-3">Careers</a>
+                                    <a href="#" class="news-img-link">
+                                        <img src="images/news3.png" class="news-img" alt="East Anglian Air Ambulance">
+                                    </a>
+                                </div>
+                                <div class="news-text-3">
+                                    <a href="#">Business Development Executive</a>
+                                    <span class="read-time"></span>
+                                    <p>Salary Range £26k-£36k per annum + Bonus Hours 40 hours per week, Monday - Friday Location Wymondha...</p>
+                                    <span class="read-more read-more-digital">Read More</span>
+                                    <div class="poster">
+                                        <div class="poster-avatar">
+                                            <img src="images/rebecca-moore.png" class="logo-circle" alt="Netmatters logo">
+                                        </div>
+                                        <div class="poster-info">
+                                            <strong>Posted by Rebecca Moore</strong>
+                                            <br>
+                                            20th February 2024
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="footer-location">
-                                <h4>Locations</h4>
-                                <ul>
-                                    <li>
-                                        <a href="#">London Office</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Cambridge Office</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Wymondham Office</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Great Yarmouth Office</a>
-                                    </li>
-                                </ul>
+                            <div class="view-all">
+                                <a href="#">
+                                    <h3>
+                                        View all
+                                        <img src="images/arrow-right-black.png" class="right-arrow" alt="Right arrow">
+                                    </h3>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="footer-copy">
-                    <div class="main-container">
-                        <div class="copyright">
-                            <p class="copy-text">&copy; Copyright Netmatters 2023.</p>
-                            <p>All rights reserved.</p>
-                             - 
-                            <a href="#">Sitemap</a>
+                <div class="client-banner">
+                    <div class="client-container">
+                        <div class="client-item">
+                            <img src="images/ashcroftlogo_landscape_goldblack_DP60P-small.png" class="ci-1" alt="Ashcroft">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/onetravellerlogo_white_figuire.png" class="ci-2" alt="One traveller">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/searles_logo.png" class="ci-3" alt="Searles">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/busseys_logo.png" class="ci-4" alt="Busseys">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/crane_logo.png" class="ci-5" alt="Crane">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/black_swan_logo.png" class="ci-6" alt="Black swan">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/xupes_logo.png" class="ci-7" alt="Xupes">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/beat_logo.png" class="ci-8" alt="Beat">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/survey_solutions_logo.png" class="ci-9" alt="Survey solutions">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/girl_guides_anglia_logo.png" class="ci-10" alt="Girl guides">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/sweetzy_logo.png" class="ci-11" alt="Sweetzy">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/howespercivallogo.png" class="ci-12" alt="Howes percival">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/girls_day_school_trust_logob.png" class="ci-13" alt="Girl day school trust">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/ashcroftlogo_landscape_goldblack_DP60P-small.png" class="ci-1" alt="Ashcroft">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/onetravellerlogo_white_figuire.png" class="ci-2" alt="One traveller">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/searles_logo.png" class="ci-3" alt="Searles">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/busseys_logo.png" class="ci-4" alt="Busseys">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/crane_logo.png" class="ci-5" alt="Crane">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/black_swan_logo.png" class="ci-6" alt="Black swan">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/xupes_logo.png" class="ci-7" alt="Xupes">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/beat_logo.png" class="ci-8" alt="Beat">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/survey_solutions_logo.png" class="ci-9" alt="Survey solutions">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/girl_guides_anglia_logo.png" class="ci-10" alt="Girl guides">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/sweetzy_logo.png" class="ci-11" alt="Sweetzy">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/howespercivallogo.png" class="ci-12" alt="Howes percival">
+                        </div>
+                        <div class="client-item">
+                            <img src="images/girls_day_school_trust_logob.png" class="ci-13" alt="Girl day school trust">
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+            <div class="newsletter">
+                <div class="main-container">
+                    <div class="newsletter-container">
+                        <h2>Email Newsletter Sign-up</h2>
+                        <div class="input">
+                            <div class="name">
+                                <label for="newsletter-name-input" class="newsletter-name">
+                                    Your Name
+                                </label>
+                                <input id="newsletter-name-input" name="name" type="text">
+                            </div>
+                            <div class="email">
+                                <label for="newsletter-email-input" class="newsletter-email">
+                                    Your Email
+                                </label>
+                                <input id="newsletter-email-input" name="email" type="email">
+                            </div>
+                        </div>
+                        <div class="marketing-info">
+                            <span class="checkbox">
+                                <input class="marketing-check" id="check" type="checkbox">
+                                <label for="check">
+                                    
+                                </label>
+                            </span>
+                            <label for="check" class="newsletter-marketing">
+                                please tick this box if you wish to recieve marketing information from us. Please see our 
+                                <a href="index.html" target="_blank">Privacy Policy</a>
+                                for more information on how we keep your data safe.
+                            </label>
+                        </div>
+                        <button name="submit" class="subscribe-btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer-container">
+                    <div class="main-container">
+                        <div class="footer-nav">
+                            <div class="top-footer">
+                                <div class="footer-logo">
+                                    <img src="images/netmatters_logo_white.png" class="footer-img" alt="Netmatters Logo">
+                                </div>
+                                <div class="social">
+                                    <h4>Follow us on:</h4>
+                                    <div class="social-icon">
+                                        <div class="social-upper">
+                                            <a class="social-btn facebook" href="#" target="blank">
+                                                <span class="facebook-logo">
+                                                    <img src="images/facebook.png" class="facebook-icon" alt="Facebook logo">
+                                                </span>
+                                            </a>
+                                            <a class="social-btn linkedin" href="#" target="blank">
+                                                <span class="linkedin-logo">
+                                                    <img src="images/linkedin2.png" class="linkedin-icon" alt="linkedin logo">
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="social-lower">
+                                            <a class="social-btn twitter" href="#" target="blank">
+                                                <span class="twitter-logo">
+                                                    <img src="images/twitter.png" class="twitter-icon" alt="Twitter logo">
+                                                </span>
+                                            </a>
+                                            <a class="social-btn insta" href="#" target="blank">
+                                                <span class="insta-logo">
+                                                    <img src="images/instagram.png" class="insta-icon" alt="Instagram logo">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-footer">
+                                <div class="footer-about">
+                                    <h4>About Netmatters</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">News</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Our Careers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Our Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Privacy Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cookie Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Data Retention & Disposal Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">CCTV Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Environmental Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Terms & Conditions</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-service">
+                                    <h4>Our Services</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Bespoke Software</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">IT Support</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Digital Marketing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Telecoms Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Web Design</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cyber Security</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Developer Training</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-industry">
+                                    <h4>Our Industries</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Financial Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Construction</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Retail & E-commerce</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Non-Profits</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">SME's</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Healthcare</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Education & Training</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Travel & Leisure</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-location">
+                                    <h4>Locations</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">London Office</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cambridge Office</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Wymondham Office</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Great Yarmouth Office</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-copy">
+                        <div class="main-container">
+                            <div class="copyright">
+                                <p class="copy-text">&copy; Copyright Netmatters 2023.</p>
+                                <p>All rights reserved.</p>
+                                - 
+                                <a href="#">Sitemap</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
         <div class="cookie-options">
             <div class="cookie button">
                 <button type="button" class="consent-btn">Manage Consent</button>
             </div>
+            <div id="cookies-popup" style="display: none;">
+                <div class="cookies-container">
+                    <div class="cookies-dialogue">
+                        <div class="cookies-header">
+                            <h3 class="cookies-title">Cookies Policy</h3>
+                        </div>
+                        <div class="cookies-description">
+                            <p class="cookies-text">
+                                Our website uses cookies. This helps us provide you with a good experience on our website. To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings". For a detailed explanation, click on "
+                                <a href="#">Privacy Policy</a>
+                                " otherwise click "Accept Cookies" to enter.
+                            </p>
+                        </div>
+                        <div class="cookies-buttons">
+                            <button name="submit" class="ck-btn lightgray">Change Settings</button>
+                            <div class="cookies-btn-spacer"></div>
+                            <button name="submit" id="accept-cookies" class="ck-btn light">Accept Cookies</button>
+                        </div>
+                    </div>
+                </div>
         </div>
         <div class="chat">
             <img src="images/chat.png" class="chat-icon" alt="Chat icon">
         </div>
+        <div class="sidebar">
+            <div class="sidebar-inner">
+                <div class="sidebar-container1 hidden-med">
+                    <ul>
+                        <li class="contact-us-sidebar sidebar-main">
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li class="software-sidebar">
+                            <a href="#">
+                                <div class="nav-block-sidebar sidebar-main">
+                                    <div class="nav-software nav-box">
+                                        <span class="nav-icon soft-icon"></span>
+                                        <small class="small-nav">Bespoke</small>
+                                        Software
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="submenu">
+                                <ul class="submenu-container">
+                                    <li class="submenu-item">
+                                        <a href="#">Bespoke CRM</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Business Automation</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Software Integrations</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Mobile App Development</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Bespoke Databases</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Sharepoint Development</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Operational Systems</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Business Central Implementation</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Internet Of Things (IOT) Software</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Intranet Development</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Customer Portal Development</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Reporting Hub</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="support-sidebar">
+                            <a href="#">
+                                <div class="nav-block-sidebar sidebar-main">
+                                    <div class="nav-support nav-box">
+                                        <span class="nav-icon sup-icon"></span>
+                                        <small class="small-nav">IT</small>
+                                        Support
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="submenu">
+                                <ul class="submenu-container">
+                                    <li class="submenu-item">
+                                        <a href="#">Managed IT Support</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Business IT Support</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Office 365 For Business</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">IT Consultancy</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Cloud Service Provider</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Data Backup & Disaster Recovery</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="marketing-sidebar">
+                            <a href="#">
+                                <div class="nav-block-sidebar sidebar-main">
+                                    <div class="nav-marketing nav-box">
+                                        <span class="nav-icon marketing-icon"></span>
+                                        <small class="small-nav">Digital</small>
+                                        Marketing
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="submenu">
+                                <ul class="submenu-container">
+                                    <li class="submenu-item">
+                                        <a href="#">Search Engine Optimisation (seo)</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Pay Per Click Advertising (ppc)</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Conversion Rate Optimisation (CRO)</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Email Marketing</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Social Media Marketing</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Content Marketing</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="telecoms-sidebar">
+                            <a href="#">
+                                <div class="nav-block-sidebar sidebar-main">
+                                    <div class="nav-telecom nav-box">
+                                        <span class="nav-icon tele-icon"></span>
+                                        <small class="small-nav">Telecoms</small>
+                                        Services
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="submenu">
+                                <ul class="submenu-container">
+                                    <li class="submenu-item">
+                                        <a href="#">Business Mobile</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Hosted VOIP Provider</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Business VOIP Systems</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Business Broadband</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Leased Lines Provider</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">3CX Systems</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="design-sidebar">
+                            <a href="#">
+                                <div class="nav-block-sidebar sidebar-main">
+                                    <div class="nav-design nav-box">
+                                        <span class="nav-icon design-icon"></span>
+                                        <small class="small-nav">Web</small>
+                                        Design
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="submenu">
+                                <ul class="submenu-container">
+                                    <li class="submenu-item">
+                                        <a href="#">Bespoke Website Design</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Ecommerce Website Design</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Pay Monthly Websites</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Branding & Design</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Mobile App Development</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Web Hosting</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="security-sidebar">
+                            <a href="#">
+                                <div class="nav-block-sidebar sidebar-main">
+                                    <div class="nav-security nav-box">
+                                        <span class="nav-icon security-icon"></span>
+                                        <small class="small-nav">Cyber</small>
+                                        Security
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="submenu">
+                                <ul class="submenu-container">
+                                    <li class="submenu-item">
+                                        <a href="#">Cyber Security Assessment</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Cyber Security Management</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Cyber Penetration Testing</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Cyber Essentials Certification</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">PCI Compliance</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Hacking Prevecntion</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="developer-sidebar last-sb-item">
+                            <a href="#">
+                                <div class="nav-block-sidebar sidebar-main">
+                                    <div class="nav-Course nav-box">
+                                        <span class="nav-icon dev-icon"></span>
+                                        <small class="small-nav">Developer</small>
+                                        Course
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="submenu">
+                                <ul class="submenu-container">
+                                    <li class="submenu-item">
+                                        <a href="#">Train For A Career In Tech</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Skills Bootcamp</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Scion Scheme Frequently Asked Questions</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#">Scion Collaborators</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-container2 show-med">
+                    <ul>
+                        <li class="secondary-sidebar-menu">
+                            <a href="#">
+                                <div class="sidebar-secondary"> Services </div>
+                            </a>
+                            <div class="submenu-secondary">
+                                <ul class="submenu-container">
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Bespoke Software
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            IT Support
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Digital Marketing
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Telecoms Services
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Web Design
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Cyber Security
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-container2">
+                    <ul>
+                        <li class="secondary-sidebar-menu">
+                            <a href="#">
+                                <div class="sidebar-secondary"> Our Work </div>
+                            </a>
+                            <div class="submenu-secondary">
+                                <ul class="submenu-container">
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Case Studies
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Our Digital Marketing Clients
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Our Website Clients
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Our IT Clients
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Our Bespoke Software Clients
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Our Telecom Clients
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="secondary-sidebar-menu">
+                            <a href="#">
+                                <div class="sidebar-secondary"> Our Knowledge </div>
+                            </a>
+                            <div class="submenu-secondary">
+                                <ul class="submenu-container">
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Technologies
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Industries
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            News
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Insights
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="secondary-sidebar-menu">
+                            <a href="#">
+                                <div class="sidebar-secondary"> Training </div>
+                            </a>
+                            <div class="submenu-secondary">
+                                <ul class="submenu-container">
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Train For A Career In Tech
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Skills Bootcamp
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            SCS Frequently Asked Questions
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Scion Collaborators
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="secondary-sidebar-menu">
+                            <a href="#">
+                                <div class="sidebar-secondary"> Our Company </div>
+                            </a>
+                            <div class="submenu-secondary">
+                                <ul class="submenu-container">
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Why Choose Us?
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Our Culture
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Our Team
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Our Careers
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Our Benefits
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="secondary-sidebar-menu">
+                            <a href="#">
+                                <div class="sidebar-secondary"> Contact Us </div>
+                            </a>
+                            <div class="submenu-secondary">
+                                <ul class="submenu-container">
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            London Office
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Cambridge Office
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Wymondham Office
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item-secondary">
+                                        <a href="#">
+                                            Great Yarmouth Office
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="secondary-sidebar-menu">
+                            <a href="#">
+                                <div class="sidebar-secondary"> Covid Risk Assessments </div>
+                            </a>
+                        </li>
+                        <li class="secondary-sidebar-menu hidden-med">
+                            <a href="#">
+                                <div class="sidebar-secondary"> Support </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="jquery.js"></script>
+        <script src="variables.js"></script>
+        <script src="hamburger.js"></script>
+        <script src="stickynav.js"></script>
+        <script src="cookies.js"></script>
     </body>
 </html>

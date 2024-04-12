@@ -200,3 +200,37 @@
     background-color: #7E57A0;
     border: solid #7E57A0 1px;
 }
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+    width: 30px;
+    border-radius: 0;
+    background-color: white;
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+    background-color: white;
+}
+.ck-btn {
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 15px 18px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 47px;
+    width: 100%;
+}
+.lightgray {
+    background-color: #999AA2;
+    border: solid #999AA2 1px;
+}
+.light {
+    background-color: #926FB1;
+    border: solid #926FB1 1px;
+}
