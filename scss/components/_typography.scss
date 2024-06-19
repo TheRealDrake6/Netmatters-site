@@ -156,6 +156,26 @@ a:hover{
     margin-bottom: 27px;
 }
 
+.office-text-1{
+    font-size: 1rem;
+    border: solid #CCC 1px;
+    margin: -10px 0 30px 0;
+    padding: 30px 30px;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+.office-text-1 a{
+    font-size: medium;
+    color: black;
+}
+.office-text-1 h3{
+    text-align: left;
+    color: #926FB1;
+}
+.office-text-1 p{
+    font-size: small;
+}
+
 .poster-info > strong{
     color: #333645;
 }

@@ -497,3 +497,17 @@ input[type="text" i]{
     margin-bottom: 30px;
     margin-left: 30px;
 }
+
+.contact-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.contact-details{
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}

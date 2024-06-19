@@ -4,7 +4,7 @@
                         <div class="main-container">
                             <div class="header-main">
                                 <div class="logo-container">
-                                    <a href="#">
+                                    <a href="index.php">
                                         <img src="images/netmatters_logo.png" alt="Netmatters Logo" class="logo">
                                     </a>
                                 </div>
@@ -15,7 +15,8 @@
                                     </button>
                                 </div>
                                 <div class="contact-btn">
-                                    <button type="submit" class="btn gray">
+                                    <a href="contact-us.php">
+                                    <button type="submit" class="btn gray" >
                                         <img src="images/paper-plane.png" alt="paper plane icon" class="icon">
                                         contact
                                     </button>
