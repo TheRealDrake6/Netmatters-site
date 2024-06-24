@@ -20,7 +20,7 @@
             <div class="main-container">
                 <ul class="breadcrumb">
                     <li>
-                        <a href="/">Home</a>
+                        <a href="index.php">Home</a>
                     </li>
                     <li>Our Offices</li>
                 </ul>
@@ -162,7 +162,7 @@
                             </span>
                             <label for="check" class="newsletter-marketing">
                                 please tick this box if you wish to recieve marketing information from us. Please see our 
-                                <a href="index.html" target="_blank">Privacy Policy</a>
+                                <a href="index.php" target="_blank">Privacy Policy</a>
                                 for more information on how we keep your data safe.
                             </label>
                         </div>
@@ -190,11 +190,11 @@
         <?php include 'menu.php';?>
         <?php include 'databaseconnect.php';?>
         <?php include 'validate.php';?>
-        <script src="jquery.js"></script>
-        <script src="variables.js"></script>
-        <script src="validation.js"></script>
-        <script src="hamburger.js"></script>
-        <script src="stickynav.js"></script>
-        <script src="accordion.js"></script>
-        <script src="cookies.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/variables.js"></script>
+        <script src="js/validation.js"></script>
+        <script src="js/hamburger.js"></script>
+        <script src="js/stickynav.js"></script>
+        <script src="js/accordion.js"></script>
+        <script src="js/cookies.js"></script>
 </body>

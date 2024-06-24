@@ -262,81 +262,6 @@
                         </div>
                         <div class="news-box">
                             <?php include "news.php";?>
-                            <!-- <div class="news-1 block-news">
-                                <a href="#" class="article"></a>
-                                <div class="news-container-img">
-                                    <a href="#" class="news-button-1">News</a>
-                                    <a href="#" class="news-img-link">
-                                        <img src="images/news1.png" class="news-img" alt="East Anglian Air Ambulance">
-                                    </a>
-                                </div>
-                                <div class="news-text-1">
-                                    <a href="#">East Anglian Air Ambulance - introducing a 3C...</a>
-                                    <span class="read-time"> - 4 Minute Read</span>
-                                    <p>The Client Championing 'Your Local Life - saving Charity' the East Anglian Air Ambulance (EAAA) is a r...</p>
-                                    <span class="read-more read-more-tele-services">Read More</span>
-                                    <div class="poster">
-                                        <div class="poster-avatar">
-                                            <img src="images/netmatters-logo-circle.png" class="logo-circle" alt="Netmatters logo">
-                                        </div>
-                                        <div class="poster-info">
-                                            <strong>Posted by Netmatters</strong>
-                                            <br>
-                                            26th February 2024
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- <div class="news-2 block-news">
-                                <a href="#" class="article"></a>
-                                <div class="news-container-img">
-                                    <a href="#" class="news-button-2">Insights</a>
-                                    <a href="#" class="news-img-link">
-                                        <img src="images/news2.png" class="news-img" alt="East Anglian Air Ambulance">
-                                    </a>
-                                </div>
-                                <div class="news-text-2">
-                                    <a href="#">What is business software and how can it help...</a>
-                                    <span class="read-time"></span>
-                                    <p>What is business software and how can it help your business? If the thought of a CRM cystem or intra...</p>
-                                    <span class="read-more read-more-software">Read More</span>
-                                    <div class="poster">
-                                        <div class="poster-avatar">
-                                            <img src="images/netmatters-logo-circle.png" class="logo-circle" alt="Netmatters logo">
-                                        </div>
-                                        <div class="poster-info">
-                                            <strong>Posted by Netmatters</strong>
-                                            <br>
-                                            21st February 2024
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news-3 block-news">
-                                <a href="#" class="article"></a>
-                                <div class="news-container-img">
-                                    <a href="#" class="news-button-3">Careers</a>
-                                    <a href="#" class="news-img-link">
-                                        <img src="images/news3.png" class="news-img" alt="East Anglian Air Ambulance">
-                                    </a>
-                                </div>
-                                <div class="news-text-3">
-                                    <a href="#">Business Development Executive</a>
-                                    <span class="read-time"></span>
-                                    <p>Salary Range £26k-£36k per annum + Bonus Hours 40 hours per week, Monday - Friday Location Wymondha...</p>
-                                    <span class="read-more read-more-digital">Read More</span>
-                                    <div class="poster">
-                                        <div class="poster-avatar">
-                                            <img src="images/rebecca-moore.png" class="logo-circle" alt="Netmatters logo">
-                                        </div>
-                                        <div class="poster-info">
-                                            <strong>Posted by Rebecca Moore</strong>
-                                            <br>
-                                            20th February 2024
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
                             <div class="view-all">
                                 <a href="#">
                                     <h3>
@@ -472,7 +397,7 @@
             <div class="cookie button">
                 <button type="button" class="consent-btn">Manage Consent</button>
             </div>
-            <div id="cookies-popup" style="display: none;">
+            <div id="cookies-popup">
                 <div class="cookies-container">
                     <div class="cookies-dialogue">
                         <div class="cookies-header">
@@ -498,10 +423,11 @@
         </div>
         <?php include 'menu.php';?>
         <?php include 'databaseconnect.php';?>
-        <script src="jquery.js"></script>
-        <script src="variables.js"></script>
-        <script src="hamburger.js"></script>
-        <script src="stickynav.js"></script>
-        <script src="cookies.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/variables.js"></script>
+        <script src="js/partner-slide.js"></script>
+        <script src="js/hamburger.js"></script>
+        <script src="js/stickynav.js"></script>
+        <script src="js/cookies.js"></script>
     </body>
 </html>
