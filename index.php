@@ -261,7 +261,8 @@
                             </a>
                         </div>
                         <div class="news-box">
-                            <div class="news-1 block-news">
+                            <?php include "news.php";?>
+                            <!-- <div class="news-1 block-news">
                                 <a href="#" class="article"></a>
                                 <div class="news-container-img">
                                     <a href="#" class="news-button-1">News</a>
@@ -285,8 +286,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="news-2 block-news">
+                            </div> -->
+                            <!-- <div class="news-2 block-news">
                                 <a href="#" class="article"></a>
                                 <div class="news-container-img">
                                     <a href="#" class="news-button-2">Insights</a>
@@ -335,7 +336,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="view-all">
                                 <a href="#">
                                     <h3>
@@ -496,6 +497,7 @@
             <img src="images/chat.png" class="chat-icon" alt="Chat icon">
         </div>
         <?php include 'menu.php';?>
+        <?php include 'databaseconnect.php';?>
         <script src="jquery.js"></script>
         <script src="variables.js"></script>
         <script src="hamburger.js"></script>

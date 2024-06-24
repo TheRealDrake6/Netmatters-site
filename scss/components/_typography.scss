@@ -224,3 +224,49 @@ label[for=check]{
     color: #333645;
     text-decoration: underline;
 }
+
+.text-web{
+    color: #926fb1 !important;
+    font-weight: 600;
+}
+
+.h3{
+    font-size: 1.625rem;
+    line-height: 1.1;
+
+}
+
+.contact-block p{
+    line-height: 1.875rem;
+    margin-bottom: 25px;
+}
+.contact-block strong{
+    font-weight: bold;
+}
+
+label.required:after{
+    content: " *";
+    color: #d24d57;
+}
+
+#contact-form .recaptcha-terms{
+    color: #333645;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+
+#contact-form .recaptcha-terms a{
+    text-decoration: underline;
+    color: #333645;
+}
+
+.helper-text{
+    color: #333645;
+    font-size: 85%;
+}
+
+.text-danger{
+    color: #a94442;
+}

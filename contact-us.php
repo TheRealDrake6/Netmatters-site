@@ -16,6 +16,16 @@
         <div class="main-body">
             <?php include 'header.php';?>
         </div>
+        <div class="breadcrumb-container">
+            <div class="main-container">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>Our Offices</li>
+                </ul>
+            </div>
+        </div>
         <div class="news">
             <div class="main-container">
                 <div class="news-title">
@@ -79,37 +89,112 @@
                 </div>                
             </div>
         </div>
-        <div class="contact-row">
-            <div class="contact-details">
-                <div>
-                    <div class="contact-block">
-                        <p>
-                            <strong>Email us on:</strong>
-                            <br>
-                        </p>
-                        <p>
-                            <a href="#" class="h3 text-web">sales@netmatters.com</a>
-                        </p>
-                        <p>
-                            <strong>Business hours:</strong>
-                        </p>
-                        <p>
-                            <strong>Monday - Friday 07:00 - 18:00</strong>
-                        </p>
+        <div class="bottom-section">
+            <div class="contact-row">
+                <div class="contact-details">
+                    <div>
+                        <div class="contact-block">
+                            <p>
+                                <strong>Email us on:</strong>
+                                <br>
+                            </p>
+                            <p>
+                                <a href="#" class="h3 text-web">sales@netmatters.com</a>
+                            </p>
+                            <p>
+                                <strong>Business hours:</strong>
+                            </p>
+                            <p>
+                                <strong>Monday - Friday 07:00 - 18:00</strong>
+                            </p>
+                            <div class="accordion">Out of Hours IT Support </div>
+                            <div class="panel">
+                                <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+                                <p>
+                                    <strong>Monday - Friday 18:00 - 22:00 Saturday</strong>
+                                    <strong>08:00 - 16:00</strong>
+                                    <br>
+                                    <strong>Sunday 10:00 - 18:00</strong>
+                                </p>
+                                <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    
+                <div class="contact-form">
+                    <form id="contact-form" method="post" action="validate.php">
+                        <div class="contact-row">
+                            <div class="input-col">
+                                <div class="form-group">
+                                    <label for="name" class="required">Your Name</label>
+                                    <input class="form-control" name="name" type="text" value id="name" id="name" >
+                                </div>
+                            </div>
+                            <div class="input-col">
+                                <div class="form-group">
+                                    <label for="company">Company Name</label>
+                                    <input class="form-control" name="company" type="text" value id="company" id="company">
+                                </div>
+                            </div>
+                            <div class="input-col">
+                                <div class="form-group">
+                                    <label for="email" class="required">Your Email</label>
+                                    <input class="form-control" name="email" type="text" value id="email" id="email" >
+                                </div>
+                            </div>
+                            <div class="input-col">
+                                <div class="form-group">
+                                    <label for="telephone" class="required">Your Telephone Number</label>
+                                    <input class="form-control" name="telephone" type="text" value id="telephone" id="telephone" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                                <label for="message" class="required">Message</label>
+                                <textarea class="form-control" name="message" cols="50" rows="10" id="message" id="message" >Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
+                        </div>
+                        <div class="marketing-info contact-tick">
+                            <span class="checkbox">
+                                <input class="marketing-check" id="check" type="checkbox">
+                                <label for="check">
+                                    
+                                </label>
+                            </span>
+                            <label for="check" class="newsletter-marketing">
+                                please tick this box if you wish to recieve marketing information from us. Please see our 
+                                <a href="index.html" target="_blank">Privacy Policy</a>
+                                for more information on how we keep your data safe.
+                            </label>
+                        </div>
+                        <div class="form-group form-label recaptcha-terms">
+                            <span>
+                                This site is protected by reCAPTCHA and the Google 
+                                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                                 and
+                                <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+                                 apply
+                            </span>
+                        </div>
+                        <div class="action-block">
+                            <button class="subscribe-btn form-btn">Send Enquiry</button>
+                            <small class="helper-text">
+                                <span class="text-danger">*</span>
+                                 Fields Required
+                            </small>
+                        </div>
+                    </form>
                 </div>
-            </div>
-            <div class="contact-form">
             </div>
         </div>
         <?php include 'footer.php';?>
         <?php include 'menu.php';?>
+        <?php include 'databaseconnect.php';?>
+        <?php include 'validate.php';?>
         <script src="jquery.js"></script>
         <script src="variables.js"></script>
+        <script src="validation.js"></script>
         <script src="hamburger.js"></script>
         <script src="stickynav.js"></script>
+        <script src="accordion.js"></script>
         <script src="cookies.js"></script>
 </body>
