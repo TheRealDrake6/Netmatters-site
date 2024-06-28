@@ -6,21 +6,21 @@ if(!localStorage.getItem("cookiesAccepted")) {
   $("#cookies-popup").show();
   $("body").css("overflow", "hidden");
 } else {
-  $(".overlay").hide();
-  $("#cookies-popup").hide();
+  $(".overlay").show();
+  $("#cookies-popup").show();
 }
 
 $(document).ready(function() {
-    $("#accept-cookies").on("click", function(){
-      $(".overlay").hide();
-      $("#cookies-popup").hide();
-      $("body").css("overflow", "auto");
-      localStorage.setItem("cookiesAccepted", "true");
-    });
+  $("#accept-cookies").on("click", function(){
+    $(".overlay").hide();
+    $("#cookies-popup").hide();
+    $("body").css("overflow", "auto");
+    localStorage.setItem("cookiesAccepted", "true");
   });
+});
 
-  $(".consent-btn").on("click", function(){
-    $(".overlay").show();
-    $("#cookies-popup").show();
-    $("body").css("overflow", "hidden");
-  });
+$(".consent-btn").on("click", function(){
+  $(".overlay").show();
+  $("#cookies-popup").show();
+  $("body").css("overflow", "hidden");
+});

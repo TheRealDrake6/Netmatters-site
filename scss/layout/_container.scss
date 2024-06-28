@@ -33,8 +33,77 @@ input[type="text" i]{
     align-items: center;
     height: 650px;
     overflow: hidden;
-    background: url(../images/main-img.png) center/cover no-repeat #818181;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),url(../images/home-YLei.jpeg) center/cover no-repeat #818181;
     margin-bottom: 30px;
+    width: 100%;
+    align-content: center;
+}
+.bespoke-img-container{
+    display: flex;
+    align-items: center;
+    height: 650px;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),url(../images/home-O67Y.jpeg) center/cover no-repeat #818181;
+    margin-bottom: 30px;
+    width: 100%;
+    align-content: center;
+}
+.support-img-container{
+    display: flex;
+    align-items: center;
+    height: 650px;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),url(../images/home-gay8.jpeg) center/cover no-repeat #818181;
+    margin-bottom: 30px;
+    width: 100%;
+    align-content: center;
+}
+.digital-img-container{
+    display: flex;
+    align-items: center;
+    height: 650px;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),url(../images/home-6yTp.jpeg) center/cover no-repeat #818181;
+    margin-bottom: 30px;
+    width: 100%;
+    align-content: center;
+}
+.telecoms-img-container{
+    display: flex;
+    align-items: center;
+    height: 650px;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),url(../images/home-J8Xx.jpeg) center/cover no-repeat #818181;
+    margin-bottom: 30px;
+    width: 100%;
+    align-content: center;
+}
+.web-img-container{
+    display: flex;
+    align-items: center;
+    height: 650px;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),url(../images/home-K0pn.jpeg) center/cover no-repeat #818181;
+    margin-bottom: 30px;
+    width: 100%;
+    align-content: center;
+}
+.cyber-img-container{
+    display: flex;
+    align-items: center;
+    height: 650px;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),url(../images/home-MSxH.jpeg) center/cover no-repeat #818181;
+    margin-bottom: 30px;
+    width: 100%;
+    align-content: center;
 }
 
 .main-title{
@@ -353,6 +422,12 @@ input[type="text" i]{
     align-items: center;
 }
 
+.main-slider{
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 550px;
+}
+
 .partner-item, .client-item{
     margin-right: 50px;
     filter: grayscale(1);
@@ -422,6 +497,8 @@ input[type="text" i]{
 .sidebar-container2 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    z-index: 12;
 }
 .sidebar-secondary {
     display: flex;
