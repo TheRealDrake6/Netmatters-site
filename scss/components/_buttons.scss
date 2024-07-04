@@ -46,6 +46,9 @@
 .button-big{
     @include button($r:3px,$mt:20px, $mr:10px, $pt:15px, $pb:15px, $pl:30px, $pr:30px, $fs:1.25rem);
 }
+.button-big::after{
+    content: ' \279D';
+}
 
 .consent-btn{
     position: fixed;
@@ -124,7 +127,7 @@
 }
 
 .news-button-1{
-    @include button($fs:0.8rem, $fw:600, $bc:#d64541, $pl:10px, $pr:10px, $lh:1.5rem);
+    @include button($fs:0.8rem, $fw:600, $pl:10px, $pr:10px, $lh:1.5rem);
     position: absolute;
     top: 10px;
     right: 0;
@@ -154,6 +157,11 @@
 .subscribe-btn:hover{
     background-color: #22242E;
 }
+
+.form-btn{
+    margin-left: 0px;
+}
+
 .blue{
     background-color: #4183D7;
     border: solid #4183D7 1px;
@@ -171,6 +179,15 @@
 .gray:hover {
     background-color: #84858F;
     border-color: #84858F;
+}
+
+.blue-gray {
+    background-color: #67809F;
+    border: solid #67809F 1px;
+}
+.blue-gray:hover {
+    background-color: #526781;
+    border-color: #526781;
 }
 
 .dark{
@@ -199,6 +216,24 @@
 .light-purple:hover{
     background-color: #7E57A0;
     border: solid #7E57A0 1px;
+}
+
+.red{
+    background-color: #D64541;
+    border: solid #D64541 1px;
+}
+.red:hover{
+    background-color: #BC2C28;
+    border: solid #BC2C28 1px;
+}
+
+.pink-red{
+    background-color: #F62459;
+    border: solid #F62459 1px;
+}
+.pink-red:hover{
+    background-color: #DE093F;
+    border: solid #DE093F 1px;
 }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
@@ -234,3 +269,14 @@
     background-color: #926FB1;
     border: solid #926FB1 1px;
 }
+
+.slick-dots li button::before {
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.7;
+  }
+
+  .slick-dots li.slick-active button::before {
+    color: #fff;
+    opacity: 1;
+  }
